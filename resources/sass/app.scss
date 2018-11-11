@@ -1,0 +1,27 @@
+@import "mixins/reset";
+@import "mixins/mixins";
+@import "mixins/grid12";
+@import "mixins/variables";
+@import "variables";
+@import "home";
+
+body {
+  @include background;
+  background: #fff;
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+  .wrapper1 {
+    min-height: calc(100vh - 70px);
+    padding-bottom: 50px;
+  }
+}
+
+.myContainer {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: $logoBlack;
+}

@@ -1,0 +1,44 @@
+#home {
+  position: relative;
+  .info {
+    position: absolute;
+    top: 135px;
+    right: 60px;
+
+    .borderBox {
+      padding-left: 70px;
+
+      .me {
+        padding-left: 10px;
+        font-size: 4rem;
+        font-weight: 900;
+        letter-spacing: -4px;
+      }
+      .meagain {
+        font-size: 7rem;
+        font-weight: 100;
+        letter-spacing: 1rem;
+      }
+      p {
+        padding-left: 8px;
+        color: gainsboro;
+        font-size: 1.5rem;
+        letter-spacing: 4px;
+        margin-top: 15px;
+        margin-bottom: 40px;
+       }
+      a {
+        background-color: #00CED1;
+        color: #fff;
+        padding: 22px;
+        margin-top: 15px;
+        border-radius: 30px;
+        font-weight: 100;
+        transition: all 0.6s ease-in-out;
+        &:hover {
+          background-color: lighten(#00CED1, 10%);
+        }
+      }
+    }
+  }
+}
