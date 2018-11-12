@@ -4,6 +4,7 @@
 @import "mixins/variables";
 @import "variables";
 @import "home";
+@import "header";
 
 body {
   @include background;

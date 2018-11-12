@@ -75,7 +75,34 @@ module.exports = __webpack_require__(2);
 /* 1 */
 /***/ (function(module, exports) {
 
+var menuBtn = document.querySelector('.menu-btn');
+var menu = document.querySelector('.menu');
+var menuNav = document.querySelector('.menu-nav');
+var menuBranding = document.querySelector('.menu-branding');
+var navItems = document.querySelectorAll('nav-Items');
 console.log('we are live');
+
+var showMenu = false;
+
+menuBtn.addEventListener('click', function () {
+    if (!showMenu) {
+        menuBtn.classList.add('openIt');
+        // menu.ClassList.add('show');
+        // menuNav.ClassList.add('show');
+        // menuBranding.ClassList.add('show');
+        // navItems.forEach(item => item.ClassList.add('show'));
+
+        showMenu = true;
+    } else {
+        menuBtn.classList.remove('openIt');
+        // m44321enu.ClassList.remove('show');
+        // menuNav.ClassList.remove('show');
+        // menuBranding.ClassList.remove('show');
+        // navItems.forEach(item => item.ClassList.remove('show'));
+
+        showMenu = false;
+    }
+});
 
 /***/ }),
 /* 2 */

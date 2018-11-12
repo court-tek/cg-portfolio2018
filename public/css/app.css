@@ -1432,7 +1432,7 @@ table {
 #home .info {
   position: absolute;
   top: 135px;
-  right: 60px;
+  right: 80px;
 }
 
 #home .info .borderBox {
@@ -1474,6 +1474,51 @@ table {
 
 #home .info .borderBox a:hover {
   background-color: #05fbff;
+}
+
+header .menu-btn {
+  visibility: hidden;
+  padding: 1em;
+  position: absolute;
+  top: 0.5em;
+  right: 1em;
+  z-index: 3;
+  cursor: pointer;
+}
+
+header .menu-btn .hamburger,
+header .menu-btn .hamburger::before,
+header .menu-btn .hamburger::after {
+  content: "";
+  display: block;
+  background: #111;
+  height: 2px;
+  width: 1.75em;
+  border-radius: 3px;
+}
+
+header .menu-btn .hamburger::before {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+
+header .menu-btn .hamburger::after {
+  -webkit-transform: translatey(4px);
+          transform: translatey(4px);
+}
+
+header .openIt .hamburger {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+header .openIt .hamburger::before {
+  opacity: 0;
+}
+
+header .openIt .hamburger::after {
+  -webkit-transform: translateY(-3px) rotate(-90deg);
+          transform: translateY(-3px) rotate(-90deg);
 }
 
 body {

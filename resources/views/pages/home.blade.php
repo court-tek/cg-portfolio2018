@@ -15,12 +15,12 @@
           <a href="">Check out my latest works</a>
         </div>
       </div>
-      <div class="logo">
+      {{-- <div class="logo">
         cg.
-      </div>
+      </div> --}}
       <div class="message">
         <div class="quotations">
-
+          Hello
         </div>
         <div class="quote">
           The Crowd
