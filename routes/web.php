@@ -14,3 +14,19 @@
 Route::get('/', function () {
     return view('pages.home');
 })->name('home');
+
+Route::get('/skills', function () {
+    return view('pages.skills');
+})->name('skills');
+
+Route::get('/projects', function () {
+    return view('pages.projects2');
+})->name('projects');
+
+Route::get('/experience', function () {
+    return view('pages.experience');
+})->name('experience');
+
+Route::get('/resume', function () {
+    return view('pages.resume');
+})->name('resume');

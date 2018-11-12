@@ -1,4 +1,5 @@
 header {
+    z-index: 4;
     .menu-btn {
         visibility: hidden;
         padding: 1em;
@@ -10,30 +11,45 @@ header {
         .hamburger,
         .hamburger::before,
         .hamburger::after {
-           content: "";
-           display: block;
-           background: #111;
-           height: 2px;
-           width: 1.75em;
-           border-radius: 3px;
+            content: "";
+            display: block;
+            background: #111;
+            height: 2px;
+            width: 1.75em;
+            border-radius: 3px;
         }
         .hamburger::before {
-          transform: translateY(-6px);
+            transform: translateY(-6px);
         }
         .hamburger::after {
-          transform: translatey(4px);
+            transform: translatey(4px);
         }
     }
-
     .openIt {
-      .hamburger {
-        transform: rotate(45deg);
+        .hamburger {
+            transform: rotate(45deg);
+        }
+        .hamburger::before {
+            opacity: 0;
+        }
+        .hamburger::after {
+            transform: translateY(-3px) rotate(-90deg);
+        }
+    }
+    .menu {
+      .menu-branding {
+        visibility: none;
       }
-      .hamburger::before {
-        opacity: 0;
+      .menu-nav {
+        float: right;
+        padding: 20px;
+        .nav-item {
+          display: inline-block;
+          padding: 0 10px;
+          .nav-link {
+            cursor: pointer;
+          }
+        }
       }
-      .hamburger::after {
-        transform: translateY(-3px) rotate(-90deg);
-      }
-      }
-}
+    }
+  }

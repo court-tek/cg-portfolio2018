@@ -1,0 +1,160 @@
+header {
+  z-index: 4;
+  position: fixed;
+  width: 100%;
+  color: #202020;
+  text-align: center;
+  // Menu Button
+  .menu-btn {
+    position: absolute;
+    right: 1em;
+    top: 2em;
+    z-index: 6;
+    cursor: pointer;
+    @include easeOut;
+    .btn-line,
+    .btn-line::before,
+    .btn-line::after {
+      content: "";
+      display: block;
+      width: 1.7em;
+      height: 3px;
+      border-radius: 3px;
+      background: $logoBlack;
+      @include easeOut;
+    }
+
+    .btn-line::before {
+      transform: translateY(-7px);
+      -moz-transform: translateY(-7px);
+    }
+    .btn-line::after {
+      transform: translateY(4px);
+      -moz-transform: translateY(4px);
+    }
+
+    // Rotate X with menu lines
+    &.close {
+      .btn-line {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+      .btn-line::before {
+        opacity: 0;
+      }
+      .btn-line::after {
+        -webkit-transform: translateY(-3px) rotate(-90deg);
+        -moz-transform: translateY(-3px) rotate(-90deg);
+        transform: translateY(-3px) rotate(-90deg);
+      }
+    }
+  }
+  // Menu Button Ends
+  // Social Media Starts
+  .socialMedia {
+    position: absolute;
+    right: 20px;
+    bottom: -600px;
+    .soc {
+      margin-bottom: 10px;
+      font-size: 28px;
+      .fa-twitter {
+        transition: all 0.6s ease-in-out;
+        &:hover {
+          color: lighten(#00aced, 10%);
+        }
+      }
+      .fa-instagram {
+        transition: all 0.6s ease-in-out;
+        &:hover {
+          color: lighten(#cd486b, 10%);
+        }
+      }
+    }
+
+  }
+  // Menu Overaly
+  .menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.9;
+    visibility: hidden;
+
+    &.show {
+      visibility: visible;
+    }
+    &-branding,
+    &-nav {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: center;
+      float: left;
+      width: 50%;
+      height: 100vh;
+      overflow: hidden;
+    }
+    &-nav {
+      margin: 0;
+      padding: 0;
+      background: darken($BSblanco, 4);
+      text-decoration: none;
+      transform: translate3d(0, -100%, 0);
+      @include easeOut;
+      &.show {
+        @include transform0;
+      }
+    }
+    // branding side
+    &-branding {
+      background: $BSblanco;
+      transform: translate3d(0, 100%, 0);
+      @include easeOut;
+      &.show {
+        // slide in from bottom
+        @include transform0;
+      }
+      .portrait {
+        background: url("https://d3iw72m71ie81c.cloudfront.net/male-36.jpg");
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        border: solid 3px gold;
+      }
+    }
+    .nav-item {
+      transform: translate3d(600px, 0, 0);
+      @include easeOut;
+
+      &.show {
+        // Slide in from right
+        transform: translate3d(0, 0, 0);
+      }
+    }
+    .nav-link {
+      display: inline-block;
+      position: relative;
+      font-size: 20px;
+      font-weight: 300;
+      text-transform: uppercase;
+      padding: 1rem 0;
+      @include easeOut;
+      &:hover {
+        color: gold;
+        font-weight: bold;
+      }
+    }
+  }
+  // Delay each nav item slide by 0.1s
+  @for $x from 1 through 6 {
+    .nav-item:nth-child(#{$x}) {
+      transition-delay: $x * 0.2s;
+    }
+  }
+}

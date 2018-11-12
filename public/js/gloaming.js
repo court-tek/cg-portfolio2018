@@ -75,18 +75,18 @@ module.exports = __webpack_require__(2);
 /* 1 */
 /***/ (function(module, exports) {
 
-var menuBtn = document.querySelector('.menu-btn');
-var menu = document.querySelector('.menu');
-var menuNav = document.querySelector('.menu-nav');
-var menuBranding = document.querySelector('.menu-branding');
-var navItems = document.querySelectorAll('nav-Items');
-console.log('we are live');
+var menuBtn = document.querySelector(".menu-btn");
+var menu = document.querySelector(".menu");
+var menuNav = document.querySelector(".menu-nav");
+var menuBranding = document.querySelector(".menu-branding");
+var navLink = document.querySelectorAll(".nav-link");
+var navItems = document.querySelectorAll(".nav-item");
 
+// hamburger menu
 var showMenu = false;
-
-menuBtn.addEventListener('click', function () {
+menuBtn.addEventListener("click", function () {
     if (!showMenu) {
-        menuBtn.classList.add('openIt');
+        menuBtn.classList.add("openIt");
         // menu.ClassList.add('show');
         // menuNav.ClassList.add('show');
         // menuBranding.ClassList.add('show');
@@ -94,7 +94,7 @@ menuBtn.addEventListener('click', function () {
 
         showMenu = true;
     } else {
-        menuBtn.classList.remove('openIt');
+        menuBtn.classList.remove("openIt");
         // m44321enu.ClassList.remove('show');
         // menuNav.ClassList.remove('show');
         // menuBranding.ClassList.remove('show');
@@ -103,6 +103,7 @@ menuBtn.addEventListener('click', function () {
         showMenu = false;
     }
 });
+// hamburger menu ends
 
 /***/ }),
 /* 2 */

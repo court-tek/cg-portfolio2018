@@ -1,0 +1,38 @@
+footer {
+  background: #f9fafc;
+  padding: 100px 15px;
+  .social-cotainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+    a {
+      font-size: 2.4rem;
+      color: #8e8f91;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: rgba(255, 53, 53, 1);
+      }
+    }
+  }
+  h5 {
+    font-size: 1rem;
+    @include footerNamestyle;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0;
+  }
+  h5 {
+    font-size: 0.9rem;
+    @include footerNamestyle;
+    // text-transform: uppercase;
+    margin: 20px 0;
+  }
+  h6 {
+    font-size: 0.7rem;
+    @include footerNamestyle;
+    text-transform: capitalize;
+  }
+}

@@ -20,10 +20,10 @@
       </div> --}}
       <div class="message">
         <div class="quotations">
-          Hello
+
         </div>
         <div class="quote">
-          The Crowd
+
         </div>
       </div>
   </section>

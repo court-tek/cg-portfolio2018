@@ -1,15 +1,15 @@
-const menuBtn = document.querySelector('.menu-btn');
-const menu = document.querySelector('.menu');
-const menuNav = document.querySelector('.menu-nav');
-const menuBranding = document.querySelector('.menu-branding');
-const navItems = document.querySelectorAll('nav-Items');
-console.log('we are live');
+const menuBtn = document.querySelector(".menu-btn");
+const menu = document.querySelector(".menu");
+const menuNav = document.querySelector(".menu-nav");
+const menuBranding = document.querySelector(".menu-branding");
+const navLink = document.querySelectorAll(".nav-link");
+const navItems = document.querySelectorAll(".nav-item");
 
+// hamburger menu
 let showMenu = false;
-
-menuBtn.addEventListener('click', () => {
+menuBtn.addEventListener("click", () => {
     if (!showMenu) {
-        menuBtn.classList.add('openIt');
+        menuBtn.classList.add("openIt");
         // menu.ClassList.add('show');
         // menuNav.ClassList.add('show');
         // menuBranding.ClassList.add('show');
@@ -17,7 +17,7 @@ menuBtn.addEventListener('click', () => {
 
         showMenu = true;
     } else {
-        menuBtn.classList.remove('openIt');
+        menuBtn.classList.remove("openIt");
         // m44321enu.ClassList.remove('show');
         // menuNav.ClassList.remove('show');
         // menuBranding.ClassList.remove('show');
@@ -26,3 +26,4 @@ menuBtn.addEventListener('click', () => {
         showMenu = false;
     }
 });
+// hamburger menu ends

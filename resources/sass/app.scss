@@ -5,6 +5,7 @@
 @import "variables";
 @import "home";
 @import "header";
+@import "mediaQueries";
 
 body {
   @include background;
@@ -18,6 +19,7 @@ body {
 }
 
 .myContainer {
+  padding-top: 80px;
   max-width: 1150px;
   margin: 0 auto;
 }
