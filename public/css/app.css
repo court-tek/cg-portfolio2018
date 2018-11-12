@@ -1544,6 +1544,1059 @@ header .menu .menu-nav .nav-item .nav-link {
   cursor: pointer;
 }
 
+footer {
+  background: #f9fafc;
+  padding: 100px 15px;
+}
+
+footer .social-cotainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+footer .social-cotainer a {
+  font-size: 2.4rem;
+  color: #8e8f91;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .social-cotainer a:hover {
+  color: #ff3535;
+}
+
+footer h5 {
+  font-size: 1rem;
+  color: #1b1d24;
+  text-align: center;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+footer h5 {
+  font-size: 0.9rem;
+  color: #1b1d24;
+  text-align: center;
+  margin: 20px 0;
+}
+
+footer h6 {
+  font-size: 0.7rem;
+  color: #1b1d24;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#experience {
+  padding: 80px 20px;
+}
+
+#experience .exp-title {
+  color: #c6e4ff;
+  font-weight: 900;
+  font-size: 5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#experience .experience-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+#experience .experience-container .shapeIcons {
+  position: relative;
+  top: 12px;
+}
+
+#experience .experience-container .shapeIcons .expSquare {
+  border: 20px solid #52b8ff;
+  padding: 8px;
+  display: inline-block;
+  position: relative;
+  top: -75px;
+  left: 20px;
+}
+
+#experience .experience-container .shapeIcons .expSquare .boxAzul {
+  width: 125px;
+  height: 125px;
+  color: #fff;
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #52b8ff;
+  position: relative;
+  top: 0.7px;
+  left: 0px;
+}
+
+#experience .experience-container .shapeIcons .awaCircle {
+  border: 20px solid #ffc853;
+  padding: 5px;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  top: 95px;
+  left: 100px;
+}
+
+#experience .experience-container .shapeIcons .awaCircle .circleAmarillo {
+  color: #ffc853;
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  height: 118px;
+  width: 118px;
+  position: relative;
+  top: 5px;
+  left: 4px;
+}
+
+#experience .experience-container .wrap .spinner {
+  width: 100px;
+  height: 100px;
+  background: #eee;
+  border-radius: 50%;
+  position: relative;
+  margin: 50%;
+  display: inline-block;
+}
+
+#experience .experience-container .wrap .spinner:after,
+#experience .experience-container .wrap .spinner:before {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+#experience .experience-container .wrap .spinner1:after {
+  background: orangered;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: 4px solid transparent;
+  -webkit-animation: pulse 2s linear infinite;
+          animation: pulse 2s linear infinite;
+}
+
+#experience .experience-container .wrap .spinner1:after:after {
+  -webkit-animation: pulse 2s linear 2.3s infinite;
+          animation: pulse 2s linear 2.3s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+#experience .experience-container .info {
+  padding: 40px 0 0;
+}
+
+#experience .experience-container .info .info-box {
+  padding: 15px;
+}
+
+#experience .experience-container .info .info-box h4 {
+  color: #16171c;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+#experience .experience-container .info .info-box .date {
+  color: #52b7ff;
+  font-size: 0.8rem;
+  font-weight: 900;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  padding: 8px 0;
+  display: block;
+}
+
+#experience .experience-container .info .info-box p {
+  color: #b2b2b4;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  padding: 8px 0;
+  display: block;
+  line-height: 1.8;
+}
+
+#skills .title {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+#skills .title .skill {
+  position: absolute;
+  z-index: 1;
+}
+
+#skills .title .skill h1 {
+  position: relative;
+  font-size: 2.5rem;
+  -webkit-text-decoration: uppercase;
+          text-decoration: uppercase;
+  font-weight: 700;
+  color: #16171b;
+  letter-spacing: 7px;
+  z-index: 1;
+}
+
+#skills .title .circlez {
+  position: absolute;
+  background: mistyrose;
+  width: 115px;
+  height: 115px;
+  border-radius: 55%;
+  top: 40px;
+  left: 40px;
+  z-index: 0;
+}
+
+#skills .skill-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#skills .skill-container .lmnop {
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+
+#skills .skill-container .lmnop h4 {
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+#skills .skill-container .lmnop ul {
+  display: inline-block;
+}
+
+#skills .skill-container .lmnop ul li {
+  display: inline-block;
+}
+
+#skills .skill-container .lmnop ul li .comma {
+  padding-right: 2px;
+}
+
+#skills .wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: minmax(60px, auto);
+  grid-gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 45px 0;
+}
+
+#skills .tradeLogo:nth-child(1) {
+  text-align: center;
+}
+
+#skills .tradeLogo:nth-child(2) {
+  text-align: center;
+}
+
+#skills .tradeLogo:nth-child(3) {
+  text-align: center;
+}
+
+#skills .tradeLogo:nth-child(4) {
+  text-align: center;
+}
+
+#skills .tradeLogo:nth-child(5) {
+  text-align: center;
+}
+
+#skills .tradeLogo:nth-child(6) {
+  text-align: center;
+}
+
+#skills .tradeLogo:nth-child(7) {
+  text-align: center;
+}
+
+#skills .tradeLogo:nth-child(8) {
+  text-align: center;
+}
+
+#skills .tradeLogo:nth-child(9) {
+  text-align: center;
+}
+
+#skills .tradeLogo:nth-child(10) {
+  text-align: center;
+}
+
+#skills .tradeLogo:nth-child(11) {
+  text-align: center;
+}
+
+#skills .tradeLogo:nth-child(12) {
+  text-align: center;
+}
+
+#skills .one {
+  grid-column: 1 / 3;
+}
+
+#skills .two {
+  grid-column: 3 / 5;
+}
+
+#skills .three {
+  grid-column: 5 / 7;
+}
+
+#skills .four {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+}
+
+#skills .five {
+  grid-column: 3 / 5;
+  grid-row: 2 / 3;
+}
+
+#skills .six {
+  grid-column: 5 / 7;
+  grid-row: 2 / 3;
+}
+
+#skills .seven {
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+}
+
+#skills .eight {
+  grid-column: 3 / 5;
+  grid-row: 3 / 4;
+}
+
+#skills .nine {
+  grid-column: 5 / 7;
+  grid-row: 3 / 4;
+}
+
+#skills .ten {
+  grid-column: 1 / 3;
+  grid-row: 4 / 5;
+}
+
+#skills .eleven {
+  grid-column: 3 / 5;
+  grid-row: 4 / 5;
+}
+
+#skills .twelve {
+  grid-column: 5 / 7;
+  grid-row: 4 / 5;
+}
+
+#portfolio-section {
+  padding: 80px 15px;
+}
+
+#portfolio-section .title {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+#portfolio-section .title .proj {
+  position: absolute;
+  z-index: 1;
+}
+
+#portfolio-section .title .proj h1 {
+  position: relati ve;
+  font-size: 2.5rem;
+  -webkit-text-decoration: uppercase;
+          text-decoration: uppercase;
+  font-weight: 700;
+  color: #16171b;
+  letter-spacing: 7px;
+  z-index: 1;
+}
+
+#portfolio-section .title .squarez {
+  position: absolute;
+  background: #eef9ff;
+  width: 115px;
+  height: 115px;
+  top: 40px;
+  left: 40px;
+  z-index: 0;
+}
+
+#portfolio-section .portfolio-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(6, [col-start] 150px [col-end]);
+  grid-gap: 10px;
+}
+
+#portfolio-section .portfolio-container .box {
+  background: black;
+  display: block;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  width: 100%;
+}
+
+#portfolio-section .portfolio-container .box:hover {
+  background: white;
+  -webkit-box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0.08);
+}
+
+#portfolio-section .portfolio-container .image1 {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+}
+
+#portfolio-section .portfolio-container .image1 .image {
+  position: relative;
+  background: url("https://raw.githubusercontent.com/court-tek/myWebFiles/master/islandarroz4.png");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+#portfolio-section .portfolio-container .image1 .image .grey-bg {
+  background: #efefef;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+#portfolio-section .portfolio-container .image1 .image .grey-bg:hover {
+  opacity: 0.9;
+}
+
+#portfolio-section .portfolio-container .image1 .image .grey-bg:hover .project-info .project-details {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+#portfolio-section .portfolio-container .image1 .image .grey-bg:hover .project-info .project-title {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+#portfolio-section .portfolio-container .image1 .image .grey-bg .project-info {
+  padding: 20px 30px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+#portfolio-section .portfolio-container .image1 .image .grey-bg .project-info .tech {
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+#portfolio-section .portfolio-container .image1 .image .grey-bg .project-info .project-details {
+  position: relative;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  margin: 0 0 .2em;
+  -webkit-transform: translate3d(-50px, 0, 0);
+          transform: translate3d(-50px, 0, 0);
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+
+#portfolio-section .portfolio-container .image1 .image .grey-bg .project-info .project-title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-transform: translate3d(-50px, 0, 0);
+          transform: translate3d(-50px, 0, 0);
+  -webkit-transition: -webkit-transform 0.3s ease-in 0.1s;
+  transition: -webkit-transform 0.3s ease-in 0.1s;
+  transition: transform 0.3s ease-in 0.1s;
+  transition: transform 0.3s ease-in 0.1s, -webkit-transform 0.3s ease-in 0.1s;
+}
+
+#portfolio-section .portfolio-container .image2 {
+  grid-column: 3 / 4;
+  grid-row: 1 / 4;
+}
+
+#portfolio-section .portfolio-container .image2 .image {
+  position: relative;
+  background: url("https://raw.githubusercontent.com/court-tek/myWebFiles/master/cpemail.png");
+  background-size: cover;
+  background-position: top left center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+#portfolio-section .portfolio-container .image2 .image .grey-bg {
+  background: #efefef;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+#portfolio-section .portfolio-container .image2 .image .grey-bg:hover {
+  opacity: 0.9;
+}
+
+#portfolio-section .portfolio-container .image2 .image .grey-bg:hover .project-info .project-details {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+#portfolio-section .portfolio-container .image2 .image .grey-bg:hover .project-info .project-title {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+#portfolio-section .portfolio-container .image2 .image .grey-bg .project-info {
+  padding: 20px 30px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+#portfolio-section .portfolio-container .image2 .image .grey-bg .project-info .tech {
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+#portfolio-section .portfolio-container .image2 .image .grey-bg .project-info .project-details {
+  position: relative;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  margin: 0 0 .2em;
+  -webkit-transform: translate3d(-50px, 0, 0);
+          transform: translate3d(-50px, 0, 0);
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+
+#portfolio-section .portfolio-container .image2 .image .grey-bg .project-info .project-title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-transform: translate3d(-50px, 0, 0);
+          transform: translate3d(-50px, 0, 0);
+  -webkit-transition: -webkit-transform 0.3s ease-in 0.1s;
+  transition: -webkit-transform 0.3s ease-in 0.1s;
+  transition: transform 0.3s ease-in 0.1s;
+  transition: transform 0.3s ease-in 0.1s, -webkit-transform 0.3s ease-in 0.1s;
+}
+
+#portfolio-section .portfolio-container .image3 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+}
+
+#portfolio-section .portfolio-container .image3 .image {
+  position: relative;
+  background: url("https://raw.githubusercontent.com/court-tek/myWebFiles/master/goJobsDash.png");
+  background-size: cover;
+  background-position: top left center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+#portfolio-section .portfolio-container .image3 .image .grey-bg {
+  background: #efefef;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+#portfolio-section .portfolio-container .image3 .image .grey-bg:hover {
+  opacity: 0.9;
+}
+
+#portfolio-section .portfolio-container .image3 .image .grey-bg:hover .project-info .project-details {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+#portfolio-section .portfolio-container .image3 .image .grey-bg:hover .project-info .project-title {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+#portfolio-section .portfolio-container .image3 .image .grey-bg .project-info {
+  padding: 20px 30px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+#portfolio-section .portfolio-container .image3 .image .grey-bg .project-info .tech {
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+#portfolio-section .portfolio-container .image3 .image .grey-bg .project-info .project-details {
+  position: relative;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  margin: 0 0 .2em;
+  -webkit-transform: translate3d(-50px, 0, 0);
+          transform: translate3d(-50px, 0, 0);
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+
+#portfolio-section .portfolio-container .image3 .image .grey-bg .project-info .project-title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-transform: translate3d(-50px, 0, 0);
+          transform: translate3d(-50px, 0, 0);
+  -webkit-transition: -webkit-transform 0.3s ease-in 0.1s;
+  transition: -webkit-transform 0.3s ease-in 0.1s;
+  transition: transform 0.3s ease-in 0.1s;
+  transition: transform 0.3s ease-in 0.1s, -webkit-transform 0.3s ease-in 0.1s;
+}
+
+#portfolio-section .portfolio-container .image4 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+#portfolio-section .portfolio-container .image4 .image {
+  position: relative;
+  background: url("https://raw.githubusercontent.com/court-tek/myWebFiles/master/shopbeastImg.png");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+#portfolio-section .portfolio-container .image4 .image .grey-bg {
+  background: #efefef;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+#portfolio-section .portfolio-container .image4 .image .grey-bg:hover {
+  opacity: 0.9;
+}
+
+#portfolio-section .portfolio-container .image4 .image .grey-bg:hover .project-info .project-details {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+#portfolio-section .portfolio-container .image4 .image .grey-bg:hover .project-info .project-title {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+#portfolio-section .portfolio-container .image4 .image .grey-bg .project-info {
+  padding: 20px 30px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+#portfolio-section .portfolio-container .image4 .image .grey-bg .project-info .tech {
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+#portfolio-section .portfolio-container .image4 .image .grey-bg .project-info .project-details {
+  position: relative;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  margin: 0 0 .2em;
+  -webkit-transform: translate3d(-50px, 0, 0);
+          transform: translate3d(-50px, 0, 0);
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+
+#portfolio-section .portfolio-container .image4 .image .grey-bg .project-info .project-title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-transform: translate3d(-50px, 0, 0);
+          transform: translate3d(-50px, 0, 0);
+  -webkit-transition: -webkit-transform 0.3s ease-in 0.1s;
+  transition: -webkit-transform 0.3s ease-in 0.1s;
+  transition: transform 0.3s ease-in 0.1s;
+  transition: transform 0.3s ease-in 0.1s, -webkit-transform 0.3s ease-in 0.1s;
+}
+
+#portfolio-section .portfolio-container .image5 {
+  grid-column: 1 / 2;
+  grid-row: 4 / 6;
+}
+
+#portfolio-section .portfolio-container .image5 .image {
+  position: relative;
+  background: url("https://raw.githubusercontent.com/court-tek/myWebFiles/master/tekashiScreen2.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+#portfolio-section .portfolio-container .image5 .image .grey-bg {
+  background: #efefef;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+#portfolio-section .portfolio-container .image5 .image .grey-bg:hover {
+  opacity: 0.9;
+}
+
+#portfolio-section .portfolio-container .image5 .image .grey-bg:hover .project-info .project-details {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+#portfolio-section .portfolio-container .image5 .image .grey-bg:hover .project-info .project-title {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+#portfolio-section .portfolio-container .image5 .image .grey-bg .project-info {
+  padding: 20px 30px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+#portfolio-section .portfolio-container .image5 .image .grey-bg .project-info .tech {
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+#portfolio-section .portfolio-container .image5 .image .grey-bg .project-info .project-details {
+  position: relative;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  margin: 0 0 .2em;
+  -webkit-transform: translate3d(-50px, 0, 0);
+          transform: translate3d(-50px, 0, 0);
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+
+#portfolio-section .portfolio-container .image5 .image .grey-bg .project-info .project-title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-transform: translate3d(-50px, 0, 0);
+          transform: translate3d(-50px, 0, 0);
+  -webkit-transition: -webkit-transform 0.3s ease-in 0.1s;
+  transition: -webkit-transform 0.3s ease-in 0.1s;
+  transition: transform 0.3s ease-in 0.1s;
+  transition: transform 0.3s ease-in 0.1s, -webkit-transform 0.3s ease-in 0.1s;
+}
+
+#portfolio-section .portfolio-container .image6 {
+  grid-column: 2 / 3;
+  grid-row: 3 / 6;
+}
+
+#portfolio-section .portfolio-container .image6 .image {
+  position: relative;
+  background: url("https://raw.githubusercontent.com/court-tek/myWebFiles/master/projectImage.png");
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+#portfolio-section .portfolio-container .image6 .image .grey-bg {
+  background: #efefef;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+#portfolio-section .portfolio-container .image6 .image .grey-bg:hover {
+  opacity: 0.9;
+}
+
+#portfolio-section .portfolio-container .image6 .image .grey-bg:hover .project-info .project-details {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+#portfolio-section .portfolio-container .image6 .image .grey-bg:hover .project-info .project-title {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+#portfolio-section .portfolio-container .image6 .image .grey-bg .project-info {
+  padding: 20px 30px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+#portfolio-section .portfolio-container .image6 .image .grey-bg .project-info .tech {
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+#portfolio-section .portfolio-container .image6 .image .grey-bg .project-info .project-details {
+  position: relative;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  margin: 0 0 .2em;
+  -webkit-transform: translate3d(-50px, 0, 0);
+          transform: translate3d(-50px, 0, 0);
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+
+#portfolio-section .portfolio-container .image6 .image .grey-bg .project-info .project-title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-transform: translate3d(-50px, 0, 0);
+          transform: translate3d(-50px, 0, 0);
+  -webkit-transition: -webkit-transform 0.3s ease-in 0.1s;
+  transition: -webkit-transform 0.3s ease-in 0.1s;
+  transition: transform 0.3s ease-in 0.1s;
+  transition: transform 0.3s ease-in 0.1s, -webkit-transform 0.3s ease-in 0.1s;
+}
+
+#portfolio-section .portfolio-container .image7 {
+  grid-column: 3 / 4;
+  grid-row: 4 / 6;
+}
+
+#portfolio-section .portfolio-container .image7 .image {
+  position: relative;
+  background: url("https://raw.githubusercontent.com/court-tek/myWebFiles/master/courtslist.png");
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+#portfolio-section .portfolio-container .image7 .image .grey-bg {
+  background: #efefef;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+#portfolio-section .portfolio-container .image7 .image .grey-bg:hover {
+  opacity: 0.9;
+}
+
+#portfolio-section .portfolio-container .image7 .image .grey-bg:hover .project-info .project-details {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+#portfolio-section .portfolio-container .image7 .image .grey-bg:hover .project-info .project-title {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+#portfolio-section .portfolio-container .image7 .image .grey-bg .project-info {
+  padding: 20px 30px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+#portfolio-section .portfolio-container .image7 .image .grey-bg .project-info .tech {
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+#portfolio-section .portfolio-container .image7 .image .grey-bg .project-info .project-details {
+  position: relative;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  margin: 0 0 .2em;
+  -webkit-transform: translate3d(-50px, 0, 0);
+          transform: translate3d(-50px, 0, 0);
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+
+#portfolio-section .portfolio-container .image7 .image .grey-bg .project-info .project-title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-transform: translate3d(-50px, 0, 0);
+          transform: translate3d(-50px, 0, 0);
+  -webkit-transition: -webkit-transform 0.3s ease-in 0.1s;
+  transition: -webkit-transform 0.3s ease-in 0.1s;
+  transition: transform 0.3s ease-in 0.1s;
+  transition: transform 0.3s ease-in 0.1s, -webkit-transform 0.3s ease-in 0.1s;
+}
+
 /* min-width: 1171px */
 
 /* min-width: 769px and max-width: 1170px */
