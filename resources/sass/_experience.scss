@@ -65,6 +65,15 @@
       }
     }
     .wrap {
+      .NoWork {
+        font-size: 25px;
+        width: 400px;
+        height: 100px;
+        position: relative;
+        margin: 40% 30%;
+        text-decoration: underline;
+        text-transform: uppercase;
+      }
       .spinner {
         width: 100px;
         height: 100px;

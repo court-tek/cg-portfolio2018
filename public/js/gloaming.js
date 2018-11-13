@@ -75,42 +75,69 @@ module.exports = __webpack_require__(2);
 /* 1 */
 /***/ (function(module, exports) {
 
+var header = document.querySelector(".head");
 var menuBtn = document.querySelector(".menu-btn");
 var menu = document.querySelector(".menu");
 var menuNav = document.querySelector(".menu-nav");
 var menuBranding = document.querySelector(".menu-branding");
 var navLink = document.querySelectorAll(".nav-link");
 var navItems = document.querySelectorAll(".nav-item");
+var frontLinks = document.querySelector(".links");
+var stripper = document.querySelector("#stripper");
 var menuList = [{ id: 1, link: 'Home', linkTags: "/" }, { id: 2, link: 'Skills', linkTags: "skills" }, { id: 3, link: 'Projects', linkTags: "projects" }, { id: 4, link: 'Experience', linkTags: "experience" }];
 
-// Header Links
-text = '';
-for (var i = 0; i < menuList.length; i++) {
-    text += "<li key=\"" + menuList[i].id + "\" class=\"nav-item\"><a href=\"" + menuList[i].linkTags + "\" class=\"nav-link\">" + menuList[i].link + "</a></li>";
+// CSS Spinner
+if (window.location.href === 'http://localhost:8000/experience') {
+  promise = new Promise(function (resovle) {
+    setTimeout(function () {
+      resovle();
+    }, 4000);
+  });
+
+  promise.then(function () {
+    return stripper.classList.remove('spinner');
+  }).then(function () {
+    return stripper.innerHTML = "<h1 class=\"NoWork\">" + 'No Work Experience Found' + "</h1>";
+  });
+  // Spinner Ends
+} else {
+  console.log('Do Nothing!');
 }
-document.querySelector('.menu-nav').innerHTML = text;
-// Header Links ends
+
+// Header
+if (window.location.href === 'http://localhost:8000/') {
+  var text1 = '';
+  for (var i = 0; i < menuList.length; i++) {
+    text1 += "<a key=\"" + menuList[i].id + "\" href=\"" + menuList[i].linkTags + "\">" + menuList[i].link + "</a>";
+  }
+  frontLinks.innerHTML = text1;
+} else {
+  console.log('we are here!');
+  var text2 = '';
+  for (var i = 0; i < menuList.length; i++) {
+    text2 += "<li key=\"" + menuList[i].id + "\" class=\"nav-item\"><a href=\"" + menuList[i].linkTags + "\" class=\"nav-link\">" + menuList[i].link + "</a></li>";
+  }
+  menuNav.innerHTML = text2;
+}
 
 // hamburger menu
 var showMenu = false;
 menuBtn.addEventListener("click", function () {
-    if (!showMenu) {
-        menuBtn.classList.add("openIt");
-        // menu.ClassList.add('show');
-        // menuNav.ClassList.add('show');
-        // menuBranding.ClassList.add('show');
-        // navItems.forEach(item => item.ClassList.add('show'));
-
-        showMenu = true;
-    } else {
-        menuBtn.classList.remove("openIt");
-        // m44321enu.ClassList.remove('show');
-        // menuNav.ClassList.remove('show');
-        // menuBranding.ClassList.remove('show');
-        // navItems.forEach(item => item.ClassList.remove('show'));
-
-        showMenu = false;
-    }
+  if (!showMenu) {
+    menuBtn.classList.add("openIt");
+    // menu.ClassList.add('show');
+    // menuNav.ClassList.add('show');
+    // menuBranding.ClassList.add('show');
+    // navItems.forEach(item => item.ClassList.add('show'));
+    showMenu = true;
+  } else {
+    menuBtn.classList.remove("openIt");
+    // m44321enu.ClassList.remove('show');
+    // menuNav.ClassList.remove('show');
+    // menuBranding.ClassList.remove('show');
+    // navItems.forEach(item => item.ClassList.remove('show'));
+    showMenu = false;
+  }
 });
 // hamburger menu ends
 

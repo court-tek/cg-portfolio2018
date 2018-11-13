@@ -26,7 +26,7 @@
           </div>
         </div>
         {{-- <p style="color: #111;" id="demo"></p> --}}
-        <div class="wrap">
+        <div id="stripper" class="wrap">
           <div class="spinner spinner1">
 
           </div>

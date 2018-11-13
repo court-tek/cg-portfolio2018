@@ -7,24 +7,30 @@
 
 @section('content')
   <section id="home" class="row">
-      <div class="info col-md-6">
-        <div class="borderBox">
-          <h1 class="me">Courtney</h1>
-          <h1 class="meagain">Girley</h1>
-          <p>Frontend Web Developer</p>
-          <a href="">Check out my latest works</a>
-        </div>
-      </div>
-      {{-- <div class="logo">
-        cg.
-      </div> --}}
-      <div class="message">
-        <div class="quotations">
+    <div class="flex-center position-ref full-height">
+        @if (Route::has('login'))
+            <div class="top-right links">
+                @auth
+                    <a href="{{ url('/home') }}">Home</a>
+                @else
+                    <a href="{{ route('login') }}">Login</a>
 
-        </div>
-        <div class="quote">
+                    @if (Route::has('register'))
+                        <a href="{{ route('register') }}">Register</a>
+                    @endif
+                @endauth
+            </div>
+        @endif
 
+        <div class="content">
+            <div class="title m-b-md">
+                Courtney Girley
+            </div>
+            <div class="demo"></div>
+            <div class="links">
+
+            </div>
         </div>
-      </div>
+    </div>
   </section>
 @endsection

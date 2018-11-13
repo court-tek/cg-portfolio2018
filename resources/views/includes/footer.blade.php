@@ -1,12 +1,12 @@
 <footer>
   <div class="social-cotainer">
-    <a class="fontAwe" href="#">
+    <a class="fontAwe" href="https://twitter.com/Courtney_Girley">
       <i class="fab fa-twitter"></i>
     </a>
-    <a class="fontAwe" href="#">
+    <a class="fontAwe" href="https://github.com/court-tek">
       <i class="fab fa-github-alt"></i
     </a>
-    <a class="fontAwe" href="#">
+    <a class="fontAwe" href="https://www.instagram.com/courtneydgirley/">
       <i class="fab fa-instagram"></i>
     </a>
   </div>

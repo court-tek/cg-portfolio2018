@@ -1681,6 +1681,16 @@ footer h6 {
   left: 4px;
 }
 
+#experience .experience-container .wrap .NoWork {
+  font-size: 25px;
+  width: 400px;
+  height: 100px;
+  position: relative;
+  margin: 40% 30%;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
 #experience .experience-container .wrap .spinner {
   width: 100px;
   height: 100px;
