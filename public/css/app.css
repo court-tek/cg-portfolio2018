@@ -1542,6 +1542,10 @@ header .openIt .hamburger::after {
 }
 
 header .menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
   visibility: hidden;
 }
 
@@ -1549,8 +1553,32 @@ header .menu.show {
   visibility: visible;
 }
 
-header .menu .menu-branding {
-  visibility: none;
+header .menu-branding,
+header .menu #other {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  float: left;
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+header .menu #other {
+  margin: 0;
+  padding: 0;
+  background: #fd193e;
+  z-index: 3;
 }
 
 header .menu .menu-nav {

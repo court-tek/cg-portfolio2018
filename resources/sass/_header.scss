@@ -39,12 +39,31 @@ header {
         }
     }
     .menu {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      opacity: 0.9;
       visibility: hidden;
       &.show {
         visibility: visible;
       }
-      .menu-branding {
-        visibility: none;
+      &-branding,
+      #other {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        float: left;
+        width: 50%;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      #other {
+        margin: 0;
+        padding: 0;
+        background: darken($tonyRed, 5);
+        z-index: 3;
       }
       .menu-nav {
         padding: 20px;

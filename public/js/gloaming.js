@@ -77,7 +77,7 @@ module.exports = __webpack_require__(2);
 
 var header = document.querySelector("#head");
 var menuBtn = document.querySelector(".menu-btn");
-var menu = document.querySelector(".menu");
+var menu = document.querySelector("#menu2");
 var menuNav = document.querySelector(".menu-nav");
 var menuBranding = document.querySelector(".menu-branding");
 var navLink = document.querySelectorAll(".nav-link");
