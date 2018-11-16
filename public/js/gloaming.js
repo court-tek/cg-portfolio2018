@@ -75,7 +75,7 @@ module.exports = __webpack_require__(2);
 /* 1 */
 /***/ (function(module, exports) {
 
-var header = document.querySelector(".head");
+var header = document.querySelector("#head");
 var menuBtn = document.querySelector(".menu-btn");
 var menu = document.querySelector(".menu");
 var menuNav = document.querySelector(".menu-nav");
@@ -91,7 +91,7 @@ if (window.location.href === 'http://localhost:8000/experience') {
   promise = new Promise(function (resovle) {
     setTimeout(function () {
       resovle();
-    }, 4000);
+    }, 3000);
   });
 
   promise.then(function () {
@@ -101,7 +101,7 @@ if (window.location.href === 'http://localhost:8000/experience') {
   });
   // Spinner Ends
 } else {
-  console.log('Do Nothing!');
+  console.log('Don\'t promise anything!');
 }
 
 // Header
@@ -119,26 +119,32 @@ if (window.location.href === 'http://localhost:8000/') {
   }
   menuNav.innerHTML = text2;
 }
+// Header Ends
 
 // hamburger menu
-var showMenu = false;
-menuBtn.addEventListener("click", function () {
-  if (!showMenu) {
-    menuBtn.classList.add("openIt");
-    // menu.ClassList.add('show');
-    // menuNav.ClassList.add('show');
-    // menuBranding.ClassList.add('show');
-    // navItems.forEach(item => item.ClassList.add('show'));
-    showMenu = true;
-  } else {
-    menuBtn.classList.remove("openIt");
-    // m44321enu.ClassList.remove('show');
-    // menuNav.ClassList.remove('show');
-    // menuBranding.ClassList.remove('show');
-    // navItems.forEach(item => item.ClassList.remove('show'));
-    showMenu = false;
-  }
-});
+if (window.location.href === 'http://localhost:8000/') {
+  console.log('no event listener');
+} else {
+  var showMenu = false;
+  menuBtn.addEventListener("click", function () {
+    if (!showMenu) {
+      menuBtn.classList.add("openIt");
+      menu.classList.add('show');
+      // menuNav.classList.add('show');
+      // menuBranding.classList.add('show');
+      // navItems.forEach(item => item.classList.add('show'));
+      showMenu = true;
+    } else {
+      menuBtn.classList.remove("openIt");
+      menu.classList.remove('show');
+      // menuNav.classList.remove('show');
+      // menuBranding.classList.remove('show');
+      // navItems.forEach(item => item.classList.remove('show'));
+      showMenu = false;
+    }
+  });
+}
+
 // hamburger menu ends
 
 /***/ }),

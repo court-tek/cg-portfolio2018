@@ -62,7 +62,6 @@
         </style>
     </head>
     <body>
-        @include('includes.header')
         <div class="myContainer">
           @yield('content')
         </div>

@@ -1,7 +1,7 @@
 header {
+    // visibility: hidden;
     z-index: 4;
     .menu-btn {
-        visibility: hidden;
         padding: 1em;
         position: absolute;
         top: 0.5em;
@@ -17,6 +17,8 @@ header {
             height: 2px;
             width: 1.75em;
             border-radius: 3px;
+            @include easeOut;
+
         }
         .hamburger::before {
             transform: translateY(-6px);
@@ -33,18 +35,20 @@ header {
             opacity: 0;
         }
         .hamburger::after {
-            transform: translateY(-3px) rotate(-90deg);
+            transform: translateY(-2px) rotate(-90deg);
         }
     }
     .menu {
+      visibility: hidden;
+      &.show {
+        visibility: visible;
+      }
       .menu-branding {
         visibility: none;
       }
       .menu-nav {
-        float: right;
         padding: 20px;
         .nav-item {
-          display: inline-block;
           padding: 0 10px;
           .nav-link {
             cursor: pointer;

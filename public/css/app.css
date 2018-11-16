@@ -1477,12 +1477,25 @@ table {
   background-color: #05fbff;
 }
 
+nav .menu-nav {
+  float: right;
+  padding: 20px;
+}
+
+nav .menu-nav .nav-item {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+nav .menu-nav .nav-item .nav-link {
+  cursor: pointer;
+}
+
 header {
   z-index: 4;
 }
 
 header .menu-btn {
-  visibility: hidden;
   padding: 1em;
   position: absolute;
   top: 0.5em;
@@ -1500,6 +1513,8 @@ header .menu-btn .hamburger::after {
   height: 2px;
   width: 1.75em;
   border-radius: 3px;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
 }
 
 header .menu-btn .hamburger::before {
@@ -1522,8 +1537,16 @@ header .openIt .hamburger::before {
 }
 
 header .openIt .hamburger::after {
-  -webkit-transform: translateY(-3px) rotate(-90deg);
-          transform: translateY(-3px) rotate(-90deg);
+  -webkit-transform: translateY(-2px) rotate(-90deg);
+          transform: translateY(-2px) rotate(-90deg);
+}
+
+header .menu {
+  visibility: hidden;
+}
+
+header .menu.show {
+  visibility: visible;
 }
 
 header .menu .menu-branding {
@@ -1531,12 +1554,10 @@ header .menu .menu-branding {
 }
 
 header .menu .menu-nav {
-  float: right;
   padding: 20px;
 }
 
 header .menu .menu-nav .nav-item {
-  display: inline-block;
   padding: 0 10px;
 }
 
@@ -2618,44 +2639,8 @@ footer h6 {
     width: 100%;
   }
 
-  header div.menu-branding,
-  header ul.menu-nav {
-    float: none;
-    width: 100%;
-    min-height: 0;
-  }
-
-  header div.menu-branding.show,
-  header ul.menu-nav.show {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
-
-  header .menu-nav {
-    height: 75vh;
-    -webkit-transform: translate3d(-100%, 0, 0);
-            transform: translate3d(-100%, 0, 0);
-    width: 100%;
-    font-size: 17px;
-  }
-
-  header .menu-nav .nav-item .nav-link {
-    padding: 0.3rem 0;
-  }
-
-  header .menu-branding {
-    background: #9a009a;
-    height: 25vh;
-    -webkit-transform: translate3d(100%, 0, 0);
-            transform: translate3d(100%, 0, 0);
-  }
-
-  header .menu-branding .portrait {
-    background: url("https://d3iw72m71ie81c.cloudfront.net/male-36.jpg");
-    background-size: cover;
-    padding: 5px 0;
-    width: 100px;
-    height: 100px;
+  #navi {
+    visibility: hidden;
   }
 
   #home .info {

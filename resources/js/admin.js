@@ -1,4 +1,4 @@
-const header = document.querySelector(".head");
+const header = document.querySelector("#head");
 const menuBtn = document.querySelector(".menu-btn");
 const menu = document.querySelector(".menu");
 const menuNav = document.querySelector(".menu-nav");
@@ -10,7 +10,7 @@ const stripper = document.querySelector("#stripper");
 const menuList = [
   { id: 1, link: 'Home', linkTags: "/" },
   { id: 2, link: 'Skills', linkTags: "skills" },
-  { id: 3, link: 'Projects', linkTags: "projects"},
+  { id: 3, link: 'Projects', linkTags: "projects" },
   { id: 4, link: 'Experience', linkTags: "experience" }
 ];
 
@@ -19,7 +19,7 @@ if (window.location.href === 'http://localhost:8000/experience') {
     promise = new Promise((resovle) => {
       setTimeout(() => {
         resovle();
-      }, 4000);
+      }, 3000);
     });
 
     promise
@@ -27,7 +27,7 @@ if (window.location.href === 'http://localhost:8000/experience') {
       .then(() => stripper.innerHTML = `<h1 class="NoWork">${'No Work Experience Found'}</h1>`)
 // Spinner Ends
 } else {
-  console.log('Do Nothing!');
+  console.log('Don\'t promise anything!');
 }
 
 // Header
@@ -45,24 +45,31 @@ if (window.location.href === 'http://localhost:8000/') {
   }
     menuNav.innerHTML = text2;
   }
+// Header Ends
 
 // hamburger menu
-let showMenu = false;
-menuBtn.addEventListener("click", () => {
-    if (!showMenu) {
-        menuBtn.classList.add("openIt");
-        // menu.ClassList.add('show');
-        // menuNav.ClassList.add('show');
-        // menuBranding.ClassList.add('show');
-        // navItems.forEach(item => item.ClassList.add('show'));
-        showMenu = true;
-    } else {
-        menuBtn.classList.remove("openIt");
-        // m44321enu.ClassList.remove('show');
-        // menuNav.ClassList.remove('show');
-        // menuBranding.ClassList.remove('show');
-        // navItems.forEach(item => item.ClassList.remove('show'));
-        showMenu = false;
-    }
-});
+if (window.location.href === 'http://localhost:8000/') {
+  console.log('no event listener');
+} else {
+  let showMenu = false;
+  menuBtn.addEventListener("click", () => {
+      if (!showMenu) {
+          menuBtn.classList.add("openIt");
+          menu.classList.add('show');
+          // menuNav.classList.add('show');
+          // menuBranding.classList.add('show');
+          // navItems.forEach(item => item.classList.add('show'));
+          showMenu = true;
+      } else {
+          menuBtn.classList.remove("openIt");
+          menu.classList.remove('show');
+          // menuNav.classList.remove('show');
+          // menuBranding.classList.remove('show');
+          // navItems.forEach(item => item.classList.remove('show'));
+          showMenu = false;
+      }
+  });
+}
+
+
 // hamburger menu ends

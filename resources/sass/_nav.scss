@@ -1,0 +1,13 @@
+nav {
+    .menu-nav {
+        float: right;
+        padding: 20px;
+        .nav-item {
+            display: inline-block;
+            padding: 0 10px;
+            .nav-link {
+                cursor: pointer;
+            }
+        }
+    }
+}
