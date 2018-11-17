@@ -1,12 +1,11 @@
 header {
     // visibility: hidden;
-    z-index: 4;
     .menu-btn {
         padding: 1em;
         position: absolute;
         top: 0.5em;
         right: 1em;
-        z-index: 3;
+        z-index: 6;
         cursor: pointer;
         .hamburger,
         .hamburger::before,
@@ -44,6 +43,7 @@ header {
       width: 100%;
       opacity: 0.9;
       visibility: hidden;
+      z-index: 4;
       &.show {
         visibility: visible;
       }
@@ -63,7 +63,13 @@ header {
         margin: 0;
         padding: 0;
         background: darken($tonyRed, 5);
-        z-index: 3;
+        transform: translate3d(0, -100%, 0);
+        @include easeOut;
+        z-index: 8;
+
+        &.show {
+          transform: translate3d(0, 0, 0);
+        }
       }
       .menu-nav {
         padding: 20px;

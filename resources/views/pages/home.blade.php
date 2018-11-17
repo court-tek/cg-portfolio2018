@@ -26,7 +26,7 @@
             <div class="title m-b-md">
                 Courtney Girley
             </div>
-            <div class="demo"></div>
+            <div id="test"></div>
             <div class="links">
 
             </div>

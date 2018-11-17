@@ -79,6 +79,7 @@ var header = document.querySelector("#head");
 var menuBtn = document.querySelector(".menu-btn");
 var menu = document.querySelector("#menu2");
 var menuNav = document.querySelector(".menu-nav");
+var otherNav = document.querySelector("#other");
 var menuBranding = document.querySelector(".menu-branding");
 var navLink = document.querySelectorAll(".nav-link");
 var navItems = document.querySelectorAll(".nav-item");
@@ -130,14 +131,14 @@ if (window.location.href === 'http://localhost:8000/') {
     if (!showMenu) {
       menuBtn.classList.add("openIt");
       menu.classList.add('show');
-      // menuNav.classList.add('show');
+      otherNav.classList.add('show');
       // menuBranding.classList.add('show');
       // navItems.forEach(item => item.classList.add('show'));
       showMenu = true;
     } else {
       menuBtn.classList.remove("openIt");
       menu.classList.remove('show');
-      // menuNav.classList.remove('show');
+      otherNav.classList.remove('show');
       // menuBranding.classList.remove('show');
       // navItems.forEach(item => item.classList.remove('show'));
       showMenu = false;

@@ -1491,16 +1491,12 @@ nav .menu-nav .nav-item .nav-link {
   cursor: pointer;
 }
 
-header {
-  z-index: 4;
-}
-
 header .menu-btn {
   padding: 1em;
   position: absolute;
   top: 0.5em;
   right: 1em;
-  z-index: 3;
+  z-index: 6;
   cursor: pointer;
 }
 
@@ -1547,6 +1543,7 @@ header .menu {
   width: 100%;
   opacity: 0.9;
   visibility: hidden;
+  z-index: 4;
 }
 
 header .menu.show {
@@ -1578,7 +1575,16 @@ header .menu #other {
   margin: 0;
   padding: 0;
   background: #fd193e;
-  z-index: 3;
+  -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  z-index: 8;
+}
+
+header .menu #other.show {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 header .menu .menu-nav {
