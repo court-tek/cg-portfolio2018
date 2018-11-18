@@ -78,13 +78,14 @@ module.exports = __webpack_require__(2);
 var header = document.querySelector("#head");
 var menuBtn = document.querySelector(".menu-btn");
 var menu = document.querySelector("#menu2");
-var menuNav = document.querySelector(".menu-nav");
+var menuNav = document.querySelector("#other");
 var otherNav = document.querySelector("#other");
 var menuBranding = document.querySelector(".menu-branding");
 var navLink = document.querySelectorAll(".nav-link");
 var navItems = document.querySelectorAll(".nav-item");
 var frontLinks = document.querySelector(".links");
 var stripper = document.querySelector("#stripper");
+var uniqueLink = document.querySelector(".current");
 var menuList = [{ id: 1, link: 'Home', linkTags: "/" }, { id: 2, link: 'Skills', linkTags: "skills" }, { id: 3, link: 'Projects', linkTags: "projects" }, { id: 4, link: 'Experience', linkTags: "experience" }];
 
 // CSS Spinner
@@ -116,9 +117,11 @@ if (window.location.href === 'http://localhost:8000/') {
   console.log('we are here!');
   var text2 = '';
   for (var i = 0; i < menuList.length; i++) {
-    text2 += "<li key=\"" + menuList[i].id + "\" class=\"nav-item\"><a href=\"" + menuList[i].linkTags + "\" class=\"nav-link\">" + menuList[i].link + "</a></li>";
+    text2 += "<li key=\"" + menuList[i].id + "\" class=\"nav-item\"><a href=\"" + menuList[i].linkTags + "\" class=\"nav-link current\">" + menuList[i].link + "</a></li>";
   }
+  // randon style
   menuNav.innerHTML = text2;
+  uniqueLink.style.color = 'yellow';
 }
 // Header Ends
 

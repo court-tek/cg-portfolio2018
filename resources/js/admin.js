@@ -1,13 +1,14 @@
 const header = document.querySelector("#head");
 const menuBtn = document.querySelector(".menu-btn");
 const menu = document.querySelector("#menu2");
-const menuNav = document.querySelector(".menu-nav");
+const menuNav = document.querySelector("#other");
 const otherNav = document.querySelector("#other");
 const menuBranding = document.querySelector(".menu-branding");
 const navLink = document.querySelectorAll(".nav-link");
 const navItems = document.querySelectorAll(".nav-item");
 const frontLinks = document.querySelector(".links");
 const stripper = document.querySelector("#stripper");
+const uniqueLink = document.querySelector(".current");
 const menuList = [
   { id: 1, link: 'Home', linkTags: "/" },
   { id: 2, link: 'Skills', linkTags: "skills" },
@@ -42,9 +43,11 @@ if (window.location.href === 'http://localhost:8000/') {
   console.log('we are here!');
   let text2 = ''
   for (var i = 0; i < menuList.length; i++) {
-    text2 += `<li key="${menuList[i].id}" class="nav-item"><a href="${menuList[i].linkTags}" class="nav-link">${menuList[i].link}</a></li>`
+    text2 += `<li key="${menuList[i].id}" class="nav-item"><a href="${menuList[i].linkTags}" class="nav-link current">${menuList[i].link}</a></li>`
   }
+  // randon style
     menuNav.innerHTML = text2;
+    uniqueLink.style.color = 'yellow';
   }
 // Header Ends
 
