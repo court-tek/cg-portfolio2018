@@ -14,7 +14,7 @@
     {{-- Top ends --}}
     {{-- Bottom --}}
     <ul id="other">
-      <li class="nav-item"><a href="{{ route('home') }}" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="{{ route('home') }}" class="nav-link current">Home</a></li>
       <li class="nav-item"><a href="{{ route('skills') }}" class="nav-link">Skills</a></li>
       <li class="nav-item"><a href="{{ route('projects') }}" class="nav-link">Projects</a></li>
       <li class="nav-item"><a href="{{ route('experience') }}" class="nav-link">Experience</a></li>

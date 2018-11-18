@@ -1622,6 +1622,10 @@ header .menu #other .nav-item.show {
           transform: translate3d(0, 0, 0);
 }
 
+header .menu #other .nav-item.current > a {
+  color: yellow;
+}
+
 header .menu #other .nav-item .nav-link {
   display: inline-block;
   cursor: pointer;
@@ -1629,6 +1633,12 @@ header .menu #other .nav-item .nav-link {
   text-transform: uppercase;
   padding: 1rem 0;
   font-weight: 100;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+
+header .menu #other .nav-item .nav-link:hover {
+  color: yellow;
 }
 
 header .menu-branding {

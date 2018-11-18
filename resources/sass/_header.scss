@@ -76,6 +76,9 @@ header {
                 &.show {
                   @include trans3D-0;
                 }
+                &.current > a {
+                  color: yellow;
+                }
                 .nav-link {
                   display: inline-block;
                   cursor: pointer;
@@ -83,6 +86,10 @@ header {
                   text-transform: uppercase;
                   padding: 1rem 0;
                   font-weight: 100;
+                  @include easeOut;
+                  &:hover {
+                    color: yellow;
+                  }
                 }
             }
         }
