@@ -1,7 +1,6 @@
 <header id="head">
   <div class="menu-btn">
     <div class="hamburger">
-
     </div>
   </div>
 
@@ -9,6 +8,7 @@
     {{-- Top --}}
     <div  class="menu-branding">
       <div class="portrait">
+        hello
       </div>
     </div>
     {{-- Top ends --}}

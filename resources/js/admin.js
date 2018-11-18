@@ -58,16 +58,18 @@ if (window.location.href === 'http://localhost:8000/') {
           menuBtn.classList.add("openIt");
           menu.classList.add('show');
           otherNav.classList.add('show');
-          // menuBranding.classList.add('show');
+          menuBranding.classList.add('show');
           // navItems.forEach(item => item.classList.add('show'));
           showMenu = true;
+          console.log(showMenu);
       } else {
           menuBtn.classList.remove("openIt");
           menu.classList.remove('show');
           otherNav.classList.remove('show');
-          // menuBranding.classList.remove('show');
+          menuBranding.classList.remove('show');
           // navItems.forEach(item => item.classList.remove('show'));
           showMenu = false;
+          console.log(showMenu)
       }
   });
 }

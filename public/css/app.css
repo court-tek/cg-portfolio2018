@@ -1519,8 +1519,8 @@ header .menu-btn .hamburger::before {
 }
 
 header .menu-btn .hamburger::after {
-  -webkit-transform: translatey(4px);
-          transform: translatey(4px);
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
 }
 
 header .openIt .hamburger {
@@ -1587,15 +1587,38 @@ header .menu #other.show {
           transform: translate3d(0, 0, 0);
 }
 
-header .menu .menu-nav {
-  padding: 20px;
+header .menu-branding {
+  background: #fd3253;
+  -webkit-transform: translate3d(0, 100%, 0);
+          transform: translate3d(0, 100%, 0);
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
 }
 
-header .menu .menu-nav .nav-item {
+header .menu-branding .portrait {
+  width: 250px;
+  height: 250px;
+  background: url("/img/meportrait.jpg") center center;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  border-radius: 50%;
+  border: 4px solid yellow;
+}
+
+header .menu-branding.show {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+header .menu .nav-item {
   padding: 0 10px;
 }
 
-header .menu .menu-nav .nav-item .nav-link {
+header .menu .nav-item .nav-link {
   cursor: pointer;
 }
 
