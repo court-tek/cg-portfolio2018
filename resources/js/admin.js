@@ -8,7 +8,6 @@ const navLink = document.querySelectorAll(".nav-link");
 const navItems = document.querySelectorAll(".nav-item");
 const frontLinks = document.querySelector(".links");
 const stripper = document.querySelector("#stripper");
-const uniqueLink = document.querySelector(".current");
 const menuList = [
   { id: 1, link: 'Home', linkTags: "/" },
   { id: 2, link: 'Skills', linkTags: "skills" },
@@ -47,7 +46,6 @@ if (window.location.href === 'http://localhost:8000/') {
   }
   // randon style
     menuNav.innerHTML = text2;
-    uniqueLink.style.color = 'yellow';
   }
 // Header Ends
 

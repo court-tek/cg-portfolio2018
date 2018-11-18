@@ -1622,10 +1622,6 @@ header .menu #other .nav-item.show {
           transform: translate3d(0, 0, 0);
 }
 
-header .menu #other .nav-item.current > a {
-  color: yellow;
-}
-
 header .menu #other .nav-item .nav-link {
   display: inline-block;
   cursor: pointer;
