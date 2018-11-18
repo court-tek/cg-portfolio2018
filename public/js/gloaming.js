@@ -133,7 +133,9 @@ if (window.location.href === 'http://localhost:8000/') {
       menu.classList.add('show');
       otherNav.classList.add('show');
       menuBranding.classList.add('show');
-      // navItems.forEach(item => item.classList.add('show'));
+      navItems.forEach(function (item) {
+        return item.classList.add('show');
+      });
       showMenu = true;
       console.log(showMenu);
     } else {
@@ -141,13 +143,14 @@ if (window.location.href === 'http://localhost:8000/') {
       menu.classList.remove('show');
       otherNav.classList.remove('show');
       menuBranding.classList.remove('show');
-      // navItems.forEach(item => item.classList.remove('show'));
+      navItems.forEach(function (item) {
+        return item.classList.remove('show');
+      });
       showMenu = false;
       console.log(showMenu);
     }
   });
 }
-
 // hamburger menu ends
 
 /***/ }),

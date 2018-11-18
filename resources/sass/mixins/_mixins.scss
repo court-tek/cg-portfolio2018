@@ -4,6 +4,16 @@
   font-weight: 600;
   padding-right: 6px;
 }
+// Delay each nav item slide by 0.1
+@mixin delayLoop {
+  @for $x from 1 through 4 {
+    .nav-item:nth-child(#{$x}) {
+      transition-delay: $x * 0.1s;
+    }
+  }
+}
+
+/* Delay loop ends */
 @mixin elMargin {
   margin: 0 auto;
   padding-bottom: 25px;
@@ -15,7 +25,7 @@
 }
 /* Transitions ends */
 /* Transforms */
-@mixin transform0 {
+@mixin trans3D-0 {
   transform: translate3d(0, 0, 0);
 }
 /* Transforms ends */

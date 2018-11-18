@@ -17,7 +17,6 @@ header {
             width: 1.75em;
             border-radius: 3px;
             @include easeOut;
-
         }
         .hamburger::before {
             transform: translateY(-6px);
@@ -38,67 +37,77 @@ header {
         }
     }
     .menu {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      opacity: 0.9;
-      visibility: hidden;
-      z-index: 4;
-      &.show {
-        visibility: visible;
-      }
-      &-branding,
-      #other {
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-        justify-content: center;
-        float: left;
-        width: 50%;
-        height: 100vh;
-        overflow: hidden;
-      }
-
-      #other {
-        margin: 0;
-        padding: 0;
-        background: darken($tonyRed, 5);
-        transform: translate3d(0, -100%, 0);
-        @include easeOut;
-        z-index: 8;
-
+        position: fixed;
+        top: 0;
+        width: 100%;
+        opacity: 0.9;
+        visibility: hidden;
+        z-index: 4;
         &.show {
-          transform: translate3d(0, 0, 0);
+            visibility: visible;
         }
-      }
-
-      &-branding {
-        background: $tonyRed;
-        transform: translate3d(0, 100%, 0);
-        @include easeOut;
-
-        .portrait {
-          width: 250px;
-          height: 250px;
-          background: url('/img/meportrait.jpg');
-          background-size: 150px;
-          background-repeat: no-repeat;
-          background-attachment: fixed;
-          background-position: center;
-          transform: rotate(270deg);
-          border-radius: 50%;
-          border: 4px solid yellow;
+        &-branding,
+        #other {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+            float: left;
+            width: 50%;
+            height: 100vh;
+            overflow: hidden;
         }
-        &.show {
-          transform: translate3d(0, 0, 0);
-        }
-      }
 
-        .nav-item {
-          padding: 0 10px;
-          .nav-link {
-            cursor: pointer;
-          }
+        #other {
+            margin: 0;
+            padding: 0;
+            background: darken($tonyRed, 5);
+            transform: translate3d(0, -100%, 0);
+            @include easeOut;
+            z-index: 8;
+            &.show {
+                @include trans3D-0;
+            }
+            @include delayLoop;
+            .nav-item {
+                transform: translate3d(600px, 0, 0);
+                padding: 0 10px;
+                @include easeOut;
+                &.show {
+                  @include trans3D-0;
+                }
+                .nav-link {
+                  display: inline-block;
+                  cursor: pointer;
+                  font-size: 30px;
+                  text-transform: uppercase;
+                  padding: 1rem 0;
+                  font-weight: 100;
+                }
+            }
+        }
+
+
+        &-branding {
+            background: $tonyRed;
+            transform: translate3d(0, 100%, 0);
+            @include easeOut;
+
+            .portrait {
+                width: 250px;
+                height: 250px;
+                background: url("/img/meportrait.jpg") center center;
+                background-size: 40px;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                transform: rotate(270deg);
+                border-radius: 50%;
+                border: 4px solid yellow;
+            }
+            &.show {
+                transform: translate3d(0, 0, 0);
+            }
         }
     }
-  }
+}
