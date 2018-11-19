@@ -79,7 +79,7 @@ var header = document.querySelector("#head");
 var menuBtn = document.querySelector(".menu-btn");
 var menu = document.querySelector("#menu2");
 var menuNav = document.querySelector("#other");
-var otherNav = document.querySelector("#other");
+// const otherNav = document.querySelector("#other");
 var menuBranding = document.querySelector(".menu-branding");
 var navLink = document.querySelectorAll(".nav-link");
 var navItems = document.querySelectorAll(".nav-item");
@@ -105,24 +105,6 @@ if (window.location.href === 'http://localhost:8000/experience') {
   console.log('Don\'t promise anything!');
 }
 
-// Header
-if (window.location.href === 'http://localhost:8000/') {
-  var text1 = '';
-  for (var i = 0; i < menuList.length; i++) {
-    text1 += "<a key=\"" + menuList[i].id + "\" href=\"" + menuList[i].linkTags + "\">" + menuList[i].link + "</a>";
-  }
-  frontLinks.innerHTML = text1;
-} else {
-  console.log('we are here!');
-  var text2 = '';
-  for (var i = 0; i < menuList.length; i++) {
-    text2 += "<li key=\"" + menuList[i].id + "\" class=\"nav-item\"><a href=\"" + menuList[i].linkTags + "\" class=\"nav-link current\">" + menuList[i].link + "</a></li>";
-  }
-  // randon style
-  menuNav.innerHTML = text2;
-}
-// Header Ends
-
 // hamburger menu
 if (window.location.href === 'http://localhost:8000/') {
   console.log('no event listener');
@@ -132,7 +114,7 @@ if (window.location.href === 'http://localhost:8000/') {
     if (!showMenu) {
       menuBtn.classList.add("openIt");
       menu.classList.add('show');
-      otherNav.classList.add('show');
+      menuNav.classList.add('show');
       menuBranding.classList.add('show');
       navItems.forEach(function (item) {
         return item.classList.add('show');
@@ -142,7 +124,7 @@ if (window.location.href === 'http://localhost:8000/') {
     } else {
       menuBtn.classList.remove("openIt");
       menu.classList.remove('show');
-      otherNav.classList.remove('show');
+      menuNav.classList.remove('show');
       menuBranding.classList.remove('show');
       navItems.forEach(function (item) {
         return item.classList.remove('show');
@@ -153,6 +135,18 @@ if (window.location.href === 'http://localhost:8000/') {
   });
 }
 // hamburger menu ends
+
+// Header
+if (window.location.href === 'http://localhost:8000/') {
+  var text1 = '';
+  for (var i = 0; i < menuList.length; i++) {
+    text1 += "<a key=\"" + menuList[i].id + "\" href=\"" + menuList[i].linkTags + "\">" + menuList[i].link + "</a>";
+  }
+  frontLinks.innerHTML = text1;
+} else {
+  console.log('this is not the home page:(');
+}
+// Header Ends
 
 /***/ }),
 /* 2 */
