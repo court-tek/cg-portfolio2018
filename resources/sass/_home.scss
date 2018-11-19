@@ -1,45 +1,43 @@
 #home {
-  padding-top: 60px;
-  position: relative;
-  .info {
-    position: absolute;
-    top: 135px;
-    right: 80px;
+  .full-height {
+      height: 100vh;
+  }
 
-    .borderBox {
-      padding-left: 70px;
+  .flex-center {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+  }
 
-      .me {
-        padding-left: 10px;
-        font-size: 4rem;
-        font-weight: 900;
-        letter-spacing: -4px;
-      }
-      .meagain {
-        font-size: 7rem;
-        font-weight: 100;
-        letter-spacing: 1rem;
-      }
-      p {
-        padding-left: 8px;
-        color: gainsboro;
-        font-size: 1.5rem;
-        letter-spacing: 4px;
-        margin-top: 15px;
-        margin-bottom: 40px;
-       }
-      a {
-        background-color: #00CED1;
-        color: #fff;
-        padding: 22px;
-        margin-top: 15px;
-        border-radius: 30px;
-        font-weight: 100;
-        transition: all 0.6s ease-in-out;
-        &:hover {
-          background-color: lighten(#00CED1, 10%);
-        }
-      }
-    }
+  .position-ref {
+      position: relative;
+  }
+
+  .top-right {
+      position: absolute;
+      right: 10px;
+      top: 18px;
+  }
+
+  .content {
+      text-align: center;
+  }
+
+  .title {
+      font-size: 84px;
+  }
+
+  .links > a {
+      color: #636b6f;
+      padding: 0 25px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: .1rem;
+      text-decoration: none;
+      text-transform: uppercase;
+  }
+
+  .m-b-md {
+      margin-bottom: 30px;
   }
 }

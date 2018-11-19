@@ -1427,56 +1427,52 @@ table {
   box-sizing: border-box;
 }
 
-#home {
-  padding-top: 60px;
+#home .full-height {
+  height: 100vh;
+}
+
+#home .flex-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#home .position-ref {
   position: relative;
 }
 
-#home .info {
+#home .top-right {
   position: absolute;
-  top: 135px;
-  right: 80px;
+  right: 10px;
+  top: 18px;
 }
 
-#home .info .borderBox {
-  padding-left: 70px;
+#home .content {
+  text-align: center;
 }
 
-#home .info .borderBox .me {
-  padding-left: 10px;
-  font-size: 4rem;
-  font-weight: 900;
-  letter-spacing: -4px;
+#home .title {
+  font-size: 84px;
 }
 
-#home .info .borderBox .meagain {
-  font-size: 7rem;
-  font-weight: 100;
-  letter-spacing: 1rem;
+#home .links > a {
+  color: #636b6f;
+  padding: 0 25px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
-#home .info .borderBox p {
-  padding-left: 8px;
-  color: gainsboro;
-  font-size: 1.5rem;
-  letter-spacing: 4px;
-  margin-top: 15px;
-  margin-bottom: 40px;
-}
-
-#home .info .borderBox a {
-  background-color: #00CED1;
-  color: #fff;
-  padding: 22px;
-  margin-top: 15px;
-  border-radius: 30px;
-  font-weight: 100;
-  -webkit-transition: all 0.6s ease-in-out;
-  transition: all 0.6s ease-in-out;
-}
-
-#home .info .borderBox a:hover {
-  background-color: #05fbff;
+#home .m-b-md {
+  margin-bottom: 30px;
 }
 
 nav .menu-nav {
@@ -1620,6 +1616,10 @@ header .menu #other .nav-item {
 header .menu #other .nav-item.show {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
+}
+
+header .menu #other .nav-item .current {
+  color: yellow;
 }
 
 header .menu #other .nav-item .nav-link {
@@ -2742,7 +2742,7 @@ footer h6 {
     visibility: hidden;
   }
 
-  #home .info {
+  #home .title {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -2750,16 +2750,16 @@ footer h6 {
     margin: 20px 0 0 -40px;
   }
 
-  #home .info .border-box {
+  #home .title .border-box {
     left: 5px;
     margin-bottom: 2rem;
   }
 
-  #home .info .border-box p {
+  #home .title .border-box p {
     margin-bottom: 1rem;
   }
 
-  #home .info .border-box a {
+  #home .title .border-box a {
     background: green;
     padding-bottom: 2rem;
   }

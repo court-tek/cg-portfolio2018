@@ -76,6 +76,9 @@ header {
                 &.show {
                   @include trans3D-0;
                 }
+                .current {
+                  color: yellow;
+                }
                 .nav-link {
                   display: inline-block;
                   cursor: pointer;
