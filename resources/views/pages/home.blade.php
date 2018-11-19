@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('title')
-  Courtney Girley - Web Developer / Frontend Developer/ PHP
+  Courtney Girley - Web Developer / Frontend Developer / PHP
 @endsection
 
 @section('content')
@@ -9,7 +9,7 @@
     <div class="flex-center position-ref full-height">
         <div class="content">
             <div class="title m-b-md">
-              Courtney Girley
+              <div class="fname">Courtney</div><div class="lname">Girley</div>
             </div>
             <div id="test"></div>
             <div class="links">
