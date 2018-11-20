@@ -1563,7 +1563,7 @@ header .menu.show {
 }
 
 header .menu-branding,
-header .menu #other {
+header .menu .other {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1583,7 +1583,7 @@ header .menu #other {
   overflow: hidden;
 }
 
-header .menu #other {
+header .menu .other {
   margin: 0;
   padding: 0;
   background: #303030;
@@ -1594,32 +1594,32 @@ header .menu #other {
   z-index: 8;
 }
 
-header .menu #other.show {
+header .menu .other.show {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
 
-header .menu #other .nav-item:nth-child(1) {
+header .menu .other .nav-item:nth-child(1) {
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
 }
 
-header .menu #other .nav-item:nth-child(2) {
+header .menu .other .nav-item:nth-child(2) {
   -webkit-transition-delay: 0.2s;
           transition-delay: 0.2s;
 }
 
-header .menu #other .nav-item:nth-child(3) {
+header .menu .other .nav-item:nth-child(3) {
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
 }
 
-header .menu #other .nav-item:nth-child(4) {
+header .menu .other .nav-item:nth-child(4) {
   -webkit-transition-delay: 0.4s;
           transition-delay: 0.4s;
 }
 
-header .menu #other .nav-item {
+header .menu .other .nav-item {
   -webkit-transform: translate3d(600px, 0, 0);
           transform: translate3d(600px, 0, 0);
   padding: 0 10px;
@@ -1627,16 +1627,16 @@ header .menu #other .nav-item {
   transition: all 500ms ease-out;
 }
 
-header .menu #other .nav-item.show {
+header .menu .other .nav-item.show {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
 
-header .menu #other .nav-item .current {
+header .menu .other .nav-item .current {
   color: yellow;
 }
 
-header .menu #other .nav-item .nav-link {
+header .menu .other .nav-item .nav-link {
   display: inline-block;
   cursor: pointer;
   color: #fff;
@@ -1648,7 +1648,7 @@ header .menu #other .nav-item .nav-link {
   transition: all 500ms ease-out;
 }
 
-header .menu #other .nav-item .nav-link:hover {
+header .menu .other .nav-item .nav-link:hover {
   color: yellow;
 }
 
@@ -2753,47 +2753,8 @@ footer h6 {
     width: 100%;
   }
 
-  #navi {
-    visibility: hidden;
-  }
-
-  header div.menu-branding,
-  header ul#other {
-    float: none;
+  ul.other {
     width: 100%;
-    min-height: 0;
-  }
-
-  header div.menu-branding.show,
-  header ul#other.show {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
-
-  header #other {
-    height: 75vh;
-    -webkit-transform: translate3d(0, 100%, 0);
-            transform: translate3d(0, 100%, 0);
-    font-size: 17px;
-  }
-
-  header #other .nav-item .nav-link {
-    padding: 0.3rem 0;
-  }
-
-  header .menu-branding {
-    background: #515151;
-    height: 25vh;
-    -webkit-transform: translate3d(100%, 0, 0);
-            transform: translate3d(100%, 0, 0);
-  }
-
-  header .menu-branding .portrait {
-    background: url("https://d3iw72m71ie81c.cloudfront.net/male-36.jpg");
-    background-size: cover;
-    padding: 5px 0;
-    width: 100px;
-    height: 100px;
   }
 
   #home {

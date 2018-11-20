@@ -1,8 +1,7 @@
 const header = document.querySelector("#head");
 const menuBtn = document.querySelector(".menu-btn");
 const menu = document.querySelector("#menu2");
-const menuNav = document.querySelector("#other");
-// const otherNav = document.querySelector("#other");
+const menuNav = document.querySelector(".other");
 const menuBranding = document.querySelector(".menu-branding");
 const navLink = document.querySelectorAll(".nav-link");
 const navItems = document.querySelectorAll(".nav-item");

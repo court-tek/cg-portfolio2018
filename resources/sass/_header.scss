@@ -50,7 +50,7 @@ header {
             visibility: visible;
         }
         &-branding,
-        #other {
+        .other {
             display: flex;
             flex-flow: column wrap;
             align-items: center;
@@ -61,7 +61,7 @@ header {
             overflow: hidden;
         }
 
-        #other {
+        .other {
             margin: 0;
             padding: 0;
             background: darken(#444, 8);
