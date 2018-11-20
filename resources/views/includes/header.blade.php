@@ -7,7 +7,7 @@
   <nav id="menu2" class="menu">
     {{-- Top --}}
     <div  class="menu-branding">
-      <dic src="" class="portrait"></div>
+      <dic class="portrait"></div>
     </div>
     {{-- Top ends --}}
     {{-- Bottom --}}

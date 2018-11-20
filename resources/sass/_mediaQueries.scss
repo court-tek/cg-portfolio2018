@@ -9,8 +9,8 @@
 // Tablets & Small laptops
 /* max-width: 768px */
 @include mediaMd {
-    .myContainer {
-        width: 100%;
+     .myContainer {
+         width: 100%;
     }
     // Nav section
     #navi {
@@ -30,7 +30,7 @@
 
           #other {
             height: 75vh;
-            transform: translate3d(-100%, 0, 0);
+            transform: translate3d(0, 100%, 0);
             font-size: 17px;
             .nav-item {
               .nav-link {
@@ -40,7 +40,7 @@
           }
 
           .menu-branding {
-            background: lighten($darkGreyBG, 5);
+            background: lighten(#444, 5);
             height: 25vh;
             transform: translate3d(100%, 0, 0);
             .portrait {
@@ -54,7 +54,7 @@
               height: 100px;
             }
           }
-    }
+        }
     // Menu section ends ########
 
     // Home section ########

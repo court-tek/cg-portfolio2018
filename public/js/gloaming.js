@@ -113,7 +113,6 @@ if (window.location.href === 'http://localhost:8000/') {
   menuBtn.addEventListener("click", function () {
     if (!showMenu) {
       menuBtn.classList.add("openIt");
-      menuBtn.style.color = 'white';
       menu.classList.add('show');
       menuNav.classList.add('show');
       menuBranding.classList.add('show');
