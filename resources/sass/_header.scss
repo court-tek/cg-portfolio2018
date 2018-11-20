@@ -26,14 +26,17 @@ header {
         }
     }
     .openIt {
+
         .hamburger {
             transform: rotate(45deg);
+            background: #fff;
         }
         .hamburger::before {
             opacity: 0;
         }
         .hamburger::after {
             transform: translateY(-2px) rotate(-90deg);
+            background: #fff;
         }
     }
     .menu {
@@ -61,12 +64,12 @@ header {
         #other {
             margin: 0;
             padding: 0;
-            background: darken($lightGreyFont, 5);
+            background: darken(#444, 8);
             transform: translate3d(0, -100%, 0);
             @include easeOut;
             z-index: 8;
             &.show {
-                @include trans3D-0;
+              @include trans3D-0;
             }
             @include delayLoop;
             .nav-item {
@@ -82,6 +85,7 @@ header {
                 .nav-link {
                   display: inline-block;
                   cursor: pointer;
+                  color: #fff;
                   font-size: 30px;
                   text-transform: uppercase;
                   padding: 1rem 0;
@@ -96,7 +100,7 @@ header {
 
 
         &-branding {
-            background: $tonyRed;
+            background: #444;
             transform: translate3d(0, 100%, 0);
             @include easeOut;
 

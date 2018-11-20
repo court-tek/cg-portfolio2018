@@ -1536,6 +1536,7 @@ header .menu-btn .hamburger::after {
 header .openIt .hamburger {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  background: #fff;
 }
 
 header .openIt .hamburger::before {
@@ -1545,6 +1546,7 @@ header .openIt .hamburger::before {
 header .openIt .hamburger::after {
   -webkit-transform: translateY(-2px) rotate(-90deg);
           transform: translateY(-2px) rotate(-90deg);
+  background: #fff;
 }
 
 header .menu {
@@ -1584,7 +1586,7 @@ header .menu #other {
 header .menu #other {
   margin: 0;
   padding: 0;
-  background: #acb4c2;
+  background: #303030;
   -webkit-transform: translate3d(0, -100%, 0);
           transform: translate3d(0, -100%, 0);
   -webkit-transition: all 500ms ease-out;
@@ -1637,6 +1639,7 @@ header .menu #other .nav-item .current {
 header .menu #other .nav-item .nav-link {
   display: inline-block;
   cursor: pointer;
+  color: #fff;
   font-size: 30px;
   text-transform: uppercase;
   padding: 1rem 0;
@@ -1650,7 +1653,7 @@ header .menu #other .nav-item .nav-link:hover {
 }
 
 header .menu-branding {
-  background: #fd3253;
+  background: #444;
   -webkit-transform: translate3d(0, 100%, 0);
           transform: translate3d(0, 100%, 0);
   -webkit-transition: all 500ms ease-out;
