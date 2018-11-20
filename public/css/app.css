@@ -1461,6 +1461,18 @@ table {
   font-size: 84px;
 }
 
+#home .title .name {
+  padding: 5px;
+}
+
+#home .title .fname {
+  font-weight: 700;
+}
+
+#home .title .lname {
+  color: yellow;
+}
+
 #home .links > a {
   color: #636b6f;
   padding: 0 25px;
@@ -1572,7 +1584,7 @@ header .menu #other {
 header .menu #other {
   margin: 0;
   padding: 0;
-  background: #fd193e;
+  background: #acb4c2;
   -webkit-transform: translate3d(0, -100%, 0);
           transform: translate3d(0, -100%, 0);
   -webkit-transition: all 500ms ease-out;
@@ -2742,6 +2754,45 @@ footer h6 {
     visibility: hidden;
   }
 
+  header div.menu-branding,
+  header ul#other {
+    float: none;
+    width: 100%;
+    min-height: 0;
+  }
+
+  header div.menu-branding.show,
+  header ul#other.show {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+
+  header #other {
+    height: 75vh;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    font-size: 17px;
+  }
+
+  header #other .nav-item .nav-link {
+    padding: 0.3rem 0;
+  }
+
+  header .menu-branding {
+    background: #fafbfc;
+    height: 25vh;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+
+  header .menu-branding .portrait {
+    background: url("https://d3iw72m71ie81c.cloudfront.net/male-36.jpg");
+    background-size: cover;
+    padding: 5px 0;
+    width: 100px;
+    height: 100px;
+  }
+
   #home {
     background: red;
   }
@@ -2772,6 +2823,10 @@ footer h6 {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     margin: 20px 0 0 -40px;
+  }
+
+  #home .content .links a {
+    padding: 15px;
   }
 
   .skill-container .lmnop {

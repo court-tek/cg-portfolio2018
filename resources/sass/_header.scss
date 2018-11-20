@@ -61,7 +61,7 @@ header {
         #other {
             margin: 0;
             padding: 0;
-            background: darken($tonyRed, 5);
+            background: darken($lightGreyFont, 5);
             transform: translate3d(0, -100%, 0);
             @include easeOut;
             z-index: 8;

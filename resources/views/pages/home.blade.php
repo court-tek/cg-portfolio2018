@@ -9,7 +9,7 @@
     <div class="flex-center position-ref full-height">
         <div class="content">
             <div class="title m-b-md">
-              <div class="fname">Courtney</div><div class="lname">Girley</div>
+              <span class="fname name">Courtney</span><span class="lname name">Girley</span>
             </div>
             <div id="test"></div>
             <div class="links">

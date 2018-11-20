@@ -25,6 +25,15 @@
 
   .title {
       font-size: 84px;
+      .name {
+        padding: 5px;
+      }
+      .fname {
+        font-weight: 700;
+      }
+      .lname {
+        color: yellow;
+      }
   }
 
   .links > a {
