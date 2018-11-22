@@ -1,7 +1,6 @@
 const header = document.querySelector("#head");
 const menuBtn = document.querySelector(".menu-btn");
 const menu = document.querySelector("#menu2");
-const menuNav = document.querySelector(".other");
 const menuBranding = document.querySelector(".menu-branding");
 const navLink = document.querySelectorAll(".nav-link");
 const navItems = document.querySelectorAll(".nav-item");
@@ -39,7 +38,6 @@ if (window.location.href === 'http://localhost:8000/') {
       if (!showMenu) {
           menuBtn.classList.add("openIt");
           menu.classList.add('show');
-          menuNav.classList.add('show');
           menuBranding.classList.add('show');
           navItems.forEach(item => item.classList.add('show'));
           showMenu = true;
@@ -47,7 +45,6 @@ if (window.location.href === 'http://localhost:8000/') {
       } else {
           menuBtn.classList.remove("openIt");
           menu.classList.remove('show');
-          menuNav.classList.remove('show');
           menuBranding.classList.remove('show');
           navItems.forEach(item => item.classList.remove('show'));
           showMenu = false;

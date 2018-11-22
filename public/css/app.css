@@ -2753,8 +2753,14 @@ footer h6 {
     width: 100%;
   }
 
+  div.menu-branding,
   ul.other {
+    float: none;
     width: 100%;
+  }
+
+  .menu-branding {
+    height: 25vh;
   }
 
   #home {
