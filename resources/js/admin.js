@@ -10,7 +10,7 @@ const menuList = [
   { id: 1, link: 'Home', linkTags: "/" },
   { id: 2, link: 'Skills', linkTags: "skills" },
   { id: 3, link: 'Projects', linkTags: "projects" },
-  { id: 4, link: 'Experience', linkTags: "experience" }
+  { id: 4, link: 'About', linkTags: "experience" }
 ];
 
 // CSS Spinner

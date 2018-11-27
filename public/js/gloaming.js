@@ -83,7 +83,7 @@ var navLink = document.querySelectorAll(".nav-link");
 var navItems = document.querySelectorAll(".nav-item");
 var frontLinks = document.querySelector(".links");
 var stripper = document.querySelector("#stripper");
-var menuList = [{ id: 1, link: 'Home', linkTags: "/" }, { id: 2, link: 'Skills', linkTags: "skills" }, { id: 3, link: 'Projects', linkTags: "projects" }, { id: 4, link: 'Experience', linkTags: "experience" }];
+var menuList = [{ id: 1, link: 'Home', linkTags: "/" }, { id: 2, link: 'Skills', linkTags: "skills" }, { id: 3, link: 'Projects', linkTags: "projects" }, { id: 4, link: 'About', linkTags: "experience" }];
 
 // CSS Spinner
 if (window.location.href === 'http://localhost:8000/experience') {
