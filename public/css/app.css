@@ -2994,6 +2994,204 @@ footer h6 {
   }
 }
 
+header {
+  z-index: 4;
+  position: fixed;
+  width: 100%;
+  color: #202020;
+  text-align: center;
+}
+
+header .menu-btn {
+  position: absolute;
+  right: 1em;
+  top: 2em;
+  z-index: 6;
+  cursor: pointer;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+
+header .menu-btn .btn-line,
+header .menu-btn .btn-line::before,
+header .menu-btn .btn-line::after {
+  content: "";
+  display: block;
+  width: 1.7em;
+  height: 3px;
+  border-radius: 3px;
+  background: #1b1d24;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+
+header .menu-btn .btn-line::before {
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+  -moz-transform: translateY(-7px);
+}
+
+header .menu-btn .btn-line::after {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+  -moz-transform: translateY(4px);
+}
+
+header .menu-btn.close .btn-line {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+header .menu-btn.close .btn-line::before {
+  opacity: 0;
+}
+
+header .menu-btn.close .btn-line::after {
+  -webkit-transform: translateY(-3px) rotate(-90deg);
+  transform: translateY(-3px) rotate(-90deg);
+}
+
+header .socialMedia {
+  position: absolute;
+  right: 20px;
+  bottom: -600px;
+}
+
+header .socialMedia .soc {
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+header .socialMedia .soc .fa-twitter {
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+header .socialMedia .soc .fa-twitter:hover {
+  color: #21c2ff;
+}
+
+header .socialMedia .soc .fa-instagram {
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+header .socialMedia .soc .fa-instagram:hover {
+  color: #d8708b;
+}
+
+header .menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+  visibility: hidden;
+}
+
+header .menu.show {
+  visibility: visible;
+}
+
+header .menu-branding,
+header .menu-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  float: left;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+header .menu-branding {
+  margin: 0;
+  padding: 0;
+  background: #3a3a3a;
+  text-decoration: none;
+  -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+
+header .menu-branding.show {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+header .menu .nav-item {
+  -webkit-transform: translate3d(600px, 0, 0);
+          transform: translate3d(600px, 0, 0);
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+
+header .menu .nav-item.show {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+header .menu .current {
+  color: yellow;
+}
+
+header .menu .nav-link {
+  display: inline-block;
+  color: #fff;
+  position: relative;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+
+header .menu .nav-link:hover {
+  color: gold;
+  font-weight: bold;
+}
+
+header .nav-item:nth-child(1) {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+header .nav-item:nth-child(2) {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+header .nav-item:nth-child(3) {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+header .nav-item:nth-child(4) {
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
+}
+
+header .nav-item:nth-child(5) {
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+header .nav-item:nth-child(6) {
+  -webkit-transition-delay: 1.2s;
+          transition-delay: 1.2s;
+}
+
 body {
   background: #fff;
   font-family: "Montserrat", sans-serif;

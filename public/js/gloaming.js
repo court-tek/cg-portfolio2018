@@ -96,7 +96,7 @@ if (window.location.href === 'http://localhost:8000/experience') {
   promise.then(function () {
     return stripper.classList.remove('spinner');
   }).then(function () {
-    return stripper.innerHTML = "<h1 class=\"NoWork\">" + 'No Work Experience Found' + "</h1>";
+    return stripper.innerHTML = "<h1 class=\"NoWork\">" + 'No Work Experience Found...' + "</h1>";
   });
   // Spinner Ends
 } else {
@@ -148,7 +148,7 @@ if (window.location.href === 'http://localhost:8000/') {
 /* 2 */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: ModuleBuildError: Module build failed: \r\n        @include transform0;\r\n                ^\r\n      No mixin named transform0\r\n      in C:\\xampp\\htdocs\\cg-portfolio2018\\resources\\sass\\_menu.scss (line 106, column 18)\n    at runLoaders (C:\\xampp\\htdocs\\cg-portfolio2018\\node_modules\\webpack\\lib\\NormalModule.js:195:19)\n    at C:\\xampp\\htdocs\\cg-portfolio2018\\node_modules\\loader-runner\\lib\\LoaderRunner.js:364:11\n    at C:\\xampp\\htdocs\\cg-portfolio2018\\node_modules\\loader-runner\\lib\\LoaderRunner.js:230:18\n    at context.callback (C:\\xampp\\htdocs\\cg-portfolio2018\\node_modules\\loader-runner\\lib\\LoaderRunner.js:111:13)\n    at Object.asyncSassJobQueue.push [as callback] (C:\\xampp\\htdocs\\cg-portfolio2018\\node_modules\\sass-loader\\lib\\loader.js:55:13)\n    at Object.done [as callback] (C:\\xampp\\htdocs\\cg-portfolio2018\\node_modules\\neo-async\\async.js:8077:18)\n    at options.error (C:\\xampp\\htdocs\\cg-portfolio2018\\node_modules\\node-sass\\lib\\index.js:294:32)");
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

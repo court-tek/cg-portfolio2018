@@ -23,7 +23,7 @@ if (window.location.href === 'http://localhost:8000/experience') {
 
     promise
       .then(() => stripper.classList.remove('spinner'))
-      .then(() => stripper.innerHTML = `<h1 class="NoWork">${'No Work Experience Found'}</h1>`)
+      .then(() => stripper.innerHTML = `<h1 class="NoWork">${'No Work Experience Found...'}</h1>`)
 // Spinner Ends
 } else {
   console.log('Don\'t promise anything!');
