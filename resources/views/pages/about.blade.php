@@ -13,13 +13,13 @@
         About
       </div>
       <div class="experience-container">
-        <div class="shapeIcons">
+        {{-- <div class="shapeIcons">
           <div class="expSquare">
             <div class="boxAzul">
               Experience
             </div>
           </div>
-        </div>
+        </div> --}}
         <div id="stripper" class="wrap">
           <div class="spinner spinner1">
 
