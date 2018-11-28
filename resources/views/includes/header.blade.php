@@ -9,7 +9,7 @@
       <li class="nav-item"><a href="{{ route('home') }}" class="nav-link current">Home</a></li>
       <li class="nav-item"><a href="{{ route('skills') }}" class="nav-link">Skills</a></li>
       <li class="nav-item"><a href="{{ route('projects') }}" class="nav-link">Projects</a></li>
-      <li class="nav-item"><a href="{{ route('experience') }}" class="nav-link">Experience</a></li>
+      <li class="nav-item"><a href="{{ route('about') }}" class="nav-link">About</a></li>
     </ul>
   </nav>
 </header>

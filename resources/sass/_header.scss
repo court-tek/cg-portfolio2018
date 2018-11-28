@@ -73,7 +73,8 @@ header {
             }
             @include delayLoop;
             .nav-item {
-                transform: translate3d(600px, 0, 0);
+                transform: translate3d(0, 600px, 0);
+                margin: 0 auto;
                 padding: 0 10px;
                 @include easeOut;
                 &.show {
