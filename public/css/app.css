@@ -1730,11 +1730,11 @@ footer h6 {
   text-transform: capitalize;
 }
 
-#experience {
+#bio {
   padding: 80px 20px;
 }
 
-#experience .exp-title {
+#bio .exp-title {
   color: #c6e4ff;
   font-weight: 900;
   font-size: 5rem;
@@ -1742,162 +1742,29 @@ footer h6 {
   text-transform: uppercase;
 }
 
-#experience .experience-container {
+#bio .experience-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
 }
 
-#experience .experience-container .shapeIcons {
-  position: relative;
-  top: 12px;
-}
-
-#experience .experience-container .shapeIcons .expSquare {
-  border: 20px solid #52b8ff;
-  padding: 8px;
-  display: inline-block;
-  position: relative;
-  top: -75px;
-  left: 20px;
-}
-
-#experience .experience-container .shapeIcons .expSquare .boxAzul {
-  width: 125px;
-  height: 125px;
-  color: #fff;
-  padding: 5px;
-  text-transform: uppercase;
-  font-weight: 600;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #52b8ff;
-  position: relative;
-  top: 0.7px;
-  left: 0px;
-}
-
-#experience .experience-container .shapeIcons .awaCircle {
-  border: 20px solid #ffc853;
-  padding: 5px;
-  display: inline-block;
-  border-radius: 50%;
-  position: relative;
-  top: 95px;
-  left: 100px;
-}
-
-#experience .experience-container .shapeIcons .awaCircle .circleAmarillo {
-  color: #ffc853;
-  padding: 5px;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 3px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 50%;
-  height: 118px;
-  width: 118px;
-  position: relative;
-  top: 5px;
-  left: 4px;
-}
-
-#experience .experience-container .wrap .NoWork {
-  font-size: 25px;
-  width: 400px;
-  height: 100px;
-  position: relative;
-  margin: 40% 30%;
-  text-decoration: underline;
-  text-transform: uppercase;
-}
-
-#experience .experience-container .wrap .spinner {
-  width: 100px;
-  height: 100px;
-  background: #eee;
-  border-radius: 50%;
-  position: relative;
-  margin: 50%;
-  display: inline-block;
-}
-
-#experience .experience-container .wrap .spinner:after,
-#experience .experience-container .wrap .spinner:before {
-  content: '';
-  display: block;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-
-#experience .experience-container .wrap .spinner1:after {
-  background: orangered;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border: 4px solid transparent;
-  -webkit-animation: pulse 2s linear infinite;
-          animation: pulse 2s linear infinite;
-}
-
-#experience .experience-container .wrap .spinner1:after:after {
-  -webkit-animation: pulse 2s linear 2.3s infinite;
-          animation: pulse 2s linear 2.3s infinite;
-}
-
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    opacity: 1;
-  }
-
-  100% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-    opacity: 0;
-  }
-}
-
-@keyframes pulse {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    opacity: 1;
-  }
-
-  100% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-    opacity: 0;
-  }
-}
-
-#experience .experience-container .info {
+#bio .experience-container .image-holder {
   padding: 40px 0 0;
 }
 
-#experience .experience-container .info .info-box {
+#bio .experience-container .image-holder .image {
   padding: 15px;
 }
 
-#experience .experience-container .info .info-box h4 {
+#bio .experience-container .info {
+  padding: 40px 0 0;
+}
+
+#bio .experience-container .info .info-box {
+  padding: 15px;
+}
+
+#bio .experience-container .info .info-box h4 {
   color: #16171c;
   font-size: 1rem;
   font-weight: 700;
@@ -1905,7 +1772,7 @@ footer h6 {
   letter-spacing: 5px;
 }
 
-#experience .experience-container .info .info-box .date {
+#bio .experience-container .info .info-box .date {
   color: #52b7ff;
   font-size: 0.8rem;
   font-weight: 900;
@@ -1915,7 +1782,7 @@ footer h6 {
   display: block;
 }
 
-#experience .experience-container .info .info-box p {
+#bio .experience-container .info .info-box p {
   color: #b2b2b4;
   font-size: 0.9rem;
   font-weight: 400;

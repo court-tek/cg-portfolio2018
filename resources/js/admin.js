@@ -14,27 +14,27 @@ const menuList = [
 ];
 
 // CSS Spinner
-if (window.location.href === "http://localhost:8000/short-bio") {
-    promise = new Promise(resovle => {
-        setTimeout(() => {
-            resovle();
-        }, 3000);
-    });
-
-    promise
-        .then(() => stripper.classList.remove("spinner"))
-        .then(() =>(stripper.innerHTML =
-          `<div class="info">
-             <div class="info-box">
-              <p>Im a web developer who mostly focuses on Front End Development. From the wireframes, to HTML, CSS, and javascript programming. But wait, there's more! he also likes turkey salad, green juicing, and reading(non-fiction).</p>
-            </div>
-          </div>`
-          )
-        );
-    // Spinner Ends
-} else {
-    console.log("Don't promise anything!");
-}
+// if (window.location.href === "http://localhost:8000/short-bio") {
+//     promise = new Promise(resovle => {
+//         setTimeout(() => {
+//             resovle();
+//         }, 3000);
+//     });
+//
+//     promise
+//         .then(() => stripper.classList.remove("spinner"))
+//         .then(() =>(stripper.innerHTML =
+//           `<div class="info">
+//              <div class="info-box">
+//               <p>Im a web developer who mostly focuses on Front End Development. From the wireframes, to HTML, CSS, and javascript programming. But wait, there's more! he also likes turkey salad, green juicing, and reading(non-fiction).</p>
+//             </div>
+//           </div>`
+//           )
+//         );
+//     // Spinner Ends
+// } else {
+//     console.log("Don't promise anything!");
+// }
 
 // hamburger menu
 if (window.location.href === "http://localhost:8000/") {
