@@ -13,6 +13,7 @@
             </div>
             <div id="test"></div>
             <div class="links">
+              <a href="{{ route('about') }}">Short Bio</a>
             </div>
         </div>
     </div>
