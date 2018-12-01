@@ -109,7 +109,8 @@ var menuList = [{ id: 1, link: "Home", linkTags: "/" }, { id: 2, link: "Skills",
 // }
 
 // hamburger menu
-if (window.location.href === "https://courtportfolio2018.herokuapp.com/") {
+var walk = false;
+if (!walk == true) {
     console.log("no event listener");
 } else {
     var showMenu = false;
@@ -138,7 +139,7 @@ if (window.location.href === "https://courtportfolio2018.herokuapp.com/") {
 // hamburger menu ends
 
 // Header
-if (window.location.href === "https://courtportfolio2018.herokuapp.com/") {
+if (walk == false) {
     var text1 = "";
     for (var i = 0; i < menuList.length; i++) {
         text1 += "<a key=\"" + menuList[i].id + "\" href=\"" + menuList[i].linkTags + "\">" + menuList[i].link + "</a>";

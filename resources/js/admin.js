@@ -37,7 +37,8 @@ const menuList = [
 // }
 
 // hamburger menu
-if (window.location.href === "https://courtportfolio2018.herokuapp.com/") {
+let walk = false;
+if (!walk == true) {
     console.log("no event listener");
 } else {
     let showMenu = false;
@@ -62,7 +63,7 @@ if (window.location.href === "https://courtportfolio2018.herokuapp.com/") {
 // hamburger menu ends
 
 // Header
-if (window.location.href === "https://courtportfolio2018.herokuapp.com/") {
+if (walk == false) {
     let text1 = "";
     for (var i = 0; i < menuList.length; i++) {
         text1 += `<a key="${menuList[i].id}" href="${menuList[i].linkTags}">${
