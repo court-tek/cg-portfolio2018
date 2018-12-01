@@ -83,7 +83,7 @@ var navLink = document.querySelectorAll(".nav-link");
 var navItems = document.querySelectorAll(".nav-item");
 var frontLinks = document.querySelector(".links");
 var stripper = document.querySelector("#stripper");
-var menuList = [{ id: 1, link: "Home", linkTags: "/" }, { id: 2, link: "Skills", linkTags: "skills" }, { id: 3, link: "Projects", linkTags: "projects" }, { id: 4, link: "Short Bio", linkTags: "short-bio" }];
+var menuList = [{ id: 2, link: "Skills", linkTags: "skills" }, { id: 3, link: "Projects", linkTags: "projects" }, { id: 4, link: "Short Bio", linkTags: "short-bio" }];
 
 // CSS Spinner
 // if (window.location.href === "http://localhost:8000/short-bio") {
@@ -96,11 +96,7 @@ var menuList = [{ id: 1, link: "Home", linkTags: "/" }, { id: 2, link: "Skills",
 //     promise
 //         .then(() => stripper.classList.remove("spinner"))
 //         .then(() =>(stripper.innerHTML =
-//           `<div class="info">
-//              <div class="info-box">
-//               <p>Im a web developer who mostly focuses on Front End Development. From the wireframes, to HTML, CSS, and javascript programming. But wait, there's more! he also likes turkey salad, green juicing, and reading(non-fiction).</p>
-//             </div>
-//           </div>`
+//           `  `
 //           )
 //         );
 //     // Spinner Ends
@@ -109,7 +105,7 @@ var menuList = [{ id: 1, link: "Home", linkTags: "/" }, { id: 2, link: "Skills",
 // }
 
 // hamburger menu
-if (window.location.href === "https://courtportfolio2018.herokuapp.com/") {
+if (window.location.href === "http://localhost:8000/" || window.location.href === "https://courtportfolio2018.herokuapp.com/") {
     console.log("no event listener");
 } else {
     var showMenu = false;
@@ -138,7 +134,7 @@ if (window.location.href === "https://courtportfolio2018.herokuapp.com/") {
 // hamburger menu ends
 
 // Header
-if (window.location.href === "https://courtportfolio2018.herokuapp.com/") {
+if (window.location.href === "http://localhost:8000/" || window.location.href === "https://courtportfolio2018.herokuapp.com/") {
     var text1 = "";
     for (var i = 0; i < menuList.length; i++) {
         text1 += "<a key=\"" + menuList[i].id + "\" href=\"" + menuList[i].linkTags + "\">" + menuList[i].link + "</a>";

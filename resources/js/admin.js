@@ -7,7 +7,6 @@ const navItems = document.querySelectorAll(".nav-item");
 const frontLinks = document.querySelector(".links");
 const stripper = document.querySelector("#stripper");
 const menuList = [
-    { id: 1, link: "Home", linkTags: "/" },
     { id: 2, link: "Skills", linkTags: "skills" },
     { id: 3, link: "Projects", linkTags: "projects" },
     { id: 4, link: "Short Bio", linkTags: "short-bio" }
@@ -24,11 +23,7 @@ const menuList = [
 //     promise
 //         .then(() => stripper.classList.remove("spinner"))
 //         .then(() =>(stripper.innerHTML =
-//           `<div class="info">
-//              <div class="info-box">
-//               <p>Im a web developer who mostly focuses on Front End Development. From the wireframes, to HTML, CSS, and javascript programming. But wait, there's more! he also likes turkey salad, green juicing, and reading(non-fiction).</p>
-//             </div>
-//           </div>`
+//           `  `
 //           )
 //         );
 //     // Spinner Ends
@@ -37,7 +32,7 @@ const menuList = [
 // }
 
 // hamburger menu
-if (window.location.href === "https://courtportfolio2018.herokuapp.com/") {
+if (window.location.href === "http://localhost:8000/" || window.location.href === "https://courtportfolio2018.herokuapp.com/") {
     console.log("no event listener");
 } else {
     let showMenu = false;
@@ -62,7 +57,7 @@ if (window.location.href === "https://courtportfolio2018.herokuapp.com/") {
 // hamburger menu ends
 
 // Header
-if (window.location.href === "https://courtportfolio2018.herokuapp.com/") {
+if (window.location.href === "http://localhost:8000/" || window.location.href === "https://courtportfolio2018.herokuapp.com/") {
     let text1 = "";
     for (var i = 0; i < menuList.length; i++) {
         text1 += `<a key="${menuList[i].id}" href="${menuList[i].linkTags}">${
