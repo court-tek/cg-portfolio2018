@@ -18,6 +18,11 @@
             height: 350px;
             margin: 55px 0 0 30px;
             background-color: purple;
+            background-image: url('/img/meportrait.jpg');
+            background-position: center center left;
+            background-repeat: no-repeat;
+            background-size: 350px;
+
             #pokeInfo {
                 position: absolute;
                 top: 0;
@@ -29,6 +34,7 @@
                 overflow: hidden;
                 &:hover {
                     opacity: 0.9;
+                    transition-delay: 0.1S;
                     .color {
                         color: green;
                         @include trans3D-0;

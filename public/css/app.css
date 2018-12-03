@@ -1754,6 +1754,10 @@ footer h6 {
   height: 350px;
   margin: 55px 0 0 30px;
   background-color: purple;
+  background-image: url("/img/meportrait.jpg");
+  background-position: center center left;
+  background-repeat: no-repeat;
+  background-size: 350px;
 }
 
 #bio .experience-container .image-holder #pokeInfo {
@@ -1770,6 +1774,8 @@ footer h6 {
 
 #bio .experience-container .image-holder #pokeInfo:hover {
   opacity: 0.9;
+  -webkit-transition-delay: 0.1S;
+          transition-delay: 0.1S;
 }
 
 #bio .experience-container .image-holder #pokeInfo:hover .color {
