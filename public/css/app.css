@@ -1749,6 +1749,25 @@ footer h6 {
 }
 
 #bio .experience-container .image-holder {
+  width: 350px;
+  height: 350px;
+  margin: 55px 0 0 30px;
+  background-color: purple;
+}
+
+#bio .experience-container .image-holder #pokeInfo {
+  width: 350px;
+  height: 350px;
+  -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+}
+
+#bio .experience-container .image-holder #pokeInfo:hover {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+#bio .experience-container .image-holder {
   padding: 40px 0 0;
 }
 

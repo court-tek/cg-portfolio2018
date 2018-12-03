@@ -14,14 +14,15 @@
             <div class="experience-container">
                 <div class="image-holder">
                     <div class="image">
-                      hello
-                    </div>
-                </div>
-                <div id="pokeInfo">
-                    <div class="infoBox">
 
                     </div>
+                    <div id="pokeInfo">
+                        <div class="infoBox">
+
+                        </div>
+                    </div>
                 </div>
+
                 {{-- <div id="stripper" class="wrap">
                     <div class="spinner spinner1">
 

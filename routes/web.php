@@ -20,9 +20,13 @@ Route::get('/skills', function () {
 })->name('skills');
 
 Route::get('/projects', function () {
-    return view('pages.projects2');
+    return view('pages.projects');
 })->name('projects');
 
 Route::get('/short-bio', function () {
-    return view('pages.about');
-})->name('about');
+    return view('pages.bio');
+})->name('bio');
+
+Route::get('/blog', function () {
+    return view('pages.blog');
+})->name('blog');

@@ -1,150 +1,181 @@
 @extends('layouts.main2')
 
 @section('title')
-  Projects
+  Welcome To My Portfolio
 @endsection
 
 
 @section('content')
-<section id="projects">
-    <div class="title"><!-- title container starts -->
-      <div class="proj">
-        <h1>Projects<h1>
-      </div>
-      <div class="squarez"></div>
-    </div><!-- title container ends -->
-    <div class="project-container">
-      <div class="project-box one" style="background: url('https://raw.githubusercontent.com/court-tek/myWebFiles/master/ScreenshotDeIslandrice.jpg');
-                                      background-repeat: no-repeat;
-                                      background-position: top center;
-                                      background-size: cover;">
-        <div class="grey-bg">
-          <div class="project-info"><!-- Project details start -->
-            <div class="tech" style="padding-bottom:15px;font-weight:bold;"><br>
-              Powered by:<br>
-              <p>ReactJs, CSS3, JSX</p>
-            </div>
-            <div class="project-details">
-              Type: Responsive Web Page
-            </div>
-            <div class="project-title">
-              Island Rice Grill
-            </div>
-            <a href="https://islandricegrill.herokuapp.com/"><i class="fas fa-long-arrow-alt-right"></i></a>
-          </div><!-- Project details ends -->
+  <section id="portfolio-section" class="row">
+    <!-- title container starts -->
+    <div class="myContainer">
+      <!-- title container ends -->
+      <div class="title">
+        <div class="proj">
+          <h1>Projects<h1>
         </div>
+        <div class="squarez"></div>
       </div>
-
-      <div class="project-box two" style="background: url('https://raw.githubusercontent.com/court-tek/myWebFiles/master/cpemail.png') center center;
-                                    background-repeat: no-repeat;
-                                    background-position: left center;
-                                    background-size: cover;">
-        <div class="grey-bg">
-          <!-- Project details start -->
-          <div class="project-info">
-            <div class="tech" style="padding-bottom:15px;font-weight:bold;"><br>
-              Powered by:<br>
-              <p>HTML5, CSS3</p>
-            </div>
-            <div class="project-details">
-                Type: Responsive HTML Email
-            </div>
-            <div class="project-title">
-              Smart Watch Email
-            </div>
-            <a href="https://smart-watch-email.herokuapp.com/index.html"><i class="fas fa-long-arrow-alt-right"></i></a>
-          </div>
-          <!-- Project details start -->
-        </div>
+      <!-- title container ends -->
+      <!-- portfolio container starts -->
+      <div class="portfolio-container">
+        <a href="https://islandricegrill.herokuapp.com/" class="box image1">
+          <div class="image">
+            <!-- color background starts -->
+              <div class="grey-bg">
+                <!-- Project details start -->
+                <div class="project-info">
+                  <div class="tech" style=""><br>
+                    Powered by:<br>
+                    <p>React, Redux, CSS3, JSX</p>
+                  </div>
+                  <div class="project-details">
+                    Type: Responsive Web Page
+                  </div>
+                  <div class="project-title">
+                    Island Rice Grill
+                  </div>
+                </div>
+                <!-- Project details ends -->
+              </div>
+            <!-- color background ends -->
+         </div>
+        </a>
+        <a href="https://smart-watch-email.herokuapp.com/index.html" class="box image2">
+          <div class="image">
+            <!-- color background starts -->
+              <div class="grey-bg">
+                <!-- Project details start -->
+                <div class="project-info">
+                  <div class="tech" style=""><br>
+                    Powered by:<br>
+                    <p>HTML5, CSS3</p>
+                  </div>
+                  <div class="project-details">
+                      Type: Responsive HTML Email
+                  </div>
+                  <div class="project-title">
+                    Smart Watch Email
+                  </div>
+                </div>
+                <!-- Project details ends -->
+              </div>
+            <!-- color background ends -->
+         </div>
+        </a>
+        <a href="https://dashboardp.herokuapp.com/" class="box image3">
+          <div class="image">
+            <!-- color background starts -->
+              <div class="grey-bg">
+                <!-- Project details start -->
+                <div class="project-info">
+                  <div class="tech" style=""><br>
+                    Powered by:<br>
+                    <p>HTML5, Sass, jQuery</p>
+                  </div>
+                  <div class="project-details">
+                      Type: Responsive Web Page
+                  </div>
+                  <div class="project-title">
+                    GoJobs Dashboard
+                  </div>
+                </div>
+                <!-- Project details ends -->
+              </div>
+            <!-- color background ends -->
+         </div>
+        </a>
+        <a href="https://shopbeast.herokuapp.com/index.html" class="box image4">
+          <div class="image">
+            <!-- color background starts -->
+              <div class="grey-bg">
+                <!-- Project details start -->
+                <div class="project-info">
+                  <div class="tech" style=""><br>
+                    Powered by:<br>
+                    <p>HTML5, CSS3</p>
+                  </div>
+                  <div class="project-details">
+                    Type: Responsive HTML Email
+                  </div>
+                  <div class="project-title">
+                    Shopbeast
+                  </div>
+                </div>
+                <!-- Project details ends -->
+              </div>
+            <!-- color background ends -->
+         </div>
+        </a>
+        <a href="https://tekashisite.herokuapp.com/" class="box image5">
+          <div class="image">
+            <!-- color background starts -->
+              <div class="grey-bg">
+                <!-- Project details start -->
+                <div class="project-info">
+                  <div class="tech" style=""><br>
+                    Powered by:<br>
+                    <p>HTML5, Sass</p>
+                  </div>
+                  <div class="project-details">
+                    Type: Responsive Web Page
+                  </div>
+                  <div class="project-title">
+                    Tekashi 69 Music Site
+                  </div>
+                </div>
+                <!-- Project details ends -->
+              </div>
+            <!-- color background ends -->
+         </div>
+        </a>
+        <a href="https://abodeapp.herokuapp.com/" class="box image6">
+          <div class="image">
+            <!-- color background starts -->
+              <div class="grey-bg">
+                <!-- Project details start -->
+                <div class="project-info">
+                  <div class="tech" style=""><br>
+                    Powered by:<br>
+                    <p>React, Sass, JSX</p>
+                  </div>
+                  <div class="project-details">
+                    Responsive Web Page
+                  </div>
+                  <div class="project-title">
+                    Real Estate Web App
+                  </div>
+                </div>
+                <!-- Project details ends -->
+              </div>
+            <!-- color background ends -->
+         </div>
+        </a>
+        <a href="#" class="box image7">
+          <div class="image">
+            <!-- color background starts -->
+              <div class="grey-bg">
+                <!-- Project details start -->
+                <div class="project-info">
+                  <div class="tech" style=""><br>
+                    Powered by:<br>
+                    <p>React, Sass</p>
+                  </div>
+                  <div class="project-details">
+                      Type: Responsive Web Page
+                  </div>
+                  <div class="project-title">
+                    Courtslist Classifieds
+                  </div>
+                </div>
+                <!-- Project details ends -->
+              </div>
+            <!-- color background ends -->
+         </div>
+        </a>
       </div>
-
-      <div class="project-box three" style="background: url('https://raw.githubusercontent.com/court-tek/myWebFiles/master/goJobsDash.png') center center;
-                                      background-repeat: no-repeat;
-                                      background-position: left center;
-                                      background-size: cover;">
-        <div class="grey-bg">
-          <div class="project-info"><!-- Project details start -->
-            <div class="tech" style="padding-bottom:15px;font-weight:bold;"><br>
-              Powered by:<br>
-              <p>HTML5, Sass, jQuery</p>
-            </div>
-            <div class="project-details">
-                Type: Responsive Web Page
-            </div>
-            <div class="project-title">
-              GoJobs Dashboard
-            </div>
-            <a href="https://dashboardp.herokuapp.com/"><i class="fas fa-long-arrow-alt-right"></i></a>
-          </div><!-- Project details ends -->
-        </div>
-      </div>
-
-      <div class="project-box four" style="background: url('https://raw.githubusercontent.com/court-tek/myWebFiles/master/shopbeastImg.png') no-repeat center center;
-                                      background-repeat: no-repeat;
-                                      background-position: top center;
-                                      background-size: cover;">
-
-        <div class="grey-bg">
-          <div class="project-info"><!-- Project details start -->
-            <div class="tech" style="padding-bottom:15px;font-weight:bold;"><br>
-              Powered by:<br>
-              <p>HTML5, CSS3</p>
-            </div>
-            <div class="project-details">
-              Type: Responsive HTML Email
-            </div>
-            <div class="project-title">
-              Shopbeast
-            </div>
-            <a href="https://shopbeast.herokuapp.com/index.html"><i class="fas fa-long-arrow-alt-right"></i></a>
-          </div><!-- Project details ends -->
-        </div>
-      </div>
-
-      <div class="project-box five" style="background: url('https://raw.githubusercontent.com/court-tek/myWebFiles/master/tekashiScreen2.png') no-repeat center center;
-                                      background-repeat: no-repeat;
-                                      background-position: top center;
-                                      background-size: cover;">
-        <div class="grey-bg">
-          <div class="project-info"><!-- Project details start -->
-            <div class="tech" style="padding-bottom:15px;font-weight:bold;"><br>
-              Powered by:<br>
-              <p>HTML5, Sass</p>
-            </div>
-            <div class="project-details">
-              Type: Responsive Web Page
-            </div>
-            <div class="project-title">
-              Tekashi 69 Music Site
-            </div>
-            <a href="https://tekashisite.herokuapp.com/"><i class="fas fa-long-arrow-alt-right"></i></a>
-          </div><!-- Project details ends -->
-        </div>
-      </div>
-
-      <div class="project-box six" style="background: url('https://raw.githubusercontent.com/court-tek/myWebFiles/master/projectImage.png') no-repeat center center;
-                                          background-repeat: no-repeat;
-                                          background-position: left center;
-                                          background-size: cover;">
-        <div class="grey-bg">
-          <div class="project-info"><!-- Project details start -->
-            <div class="tech" style="padding-bottom:15px;font-weight:bold;"><br>
-              Powered by:<br>
-              <p>ReactJs, Sass, JSX</p>
-            </div>
-            <div class="project-details">
-              Responsive Web Page
-            </div>
-            <div class="project-title">
-              Real Estate Web App
-            </div>
-            <i class="fas fa-long-arrow-alt-right"></i>
-          </div>
-          <a href="https://abodeapp.herokuapp.com/"><i class="fas fa-long-arrow-alt-right"></i></a>
-          <!-- Project details ends -->
-        </div>
-      </div>
+      <!-- portfoli container ends -->
     </div>
-    </div>
-</section>
+    <!-- myContainer ends here -->
+  </section>
 @endsection
