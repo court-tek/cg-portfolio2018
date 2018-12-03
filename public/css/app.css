@@ -1750,22 +1750,28 @@ footer h6 {
 
 #bio .experience-container .image-holder {
   position: relative;
-  width: 350px;
-  height: 350px;
+  width: 325px;
+  height: 325px;
   margin: 55px 0 0 30px;
+  border-radius: 50%;
   background-color: purple;
   background-image: url("/img/meportrait.jpg");
-  background-position: center center left;
+  background-position: right bottom;
   background-repeat: no-repeat;
   background-size: 350px;
 }
 
 #bio .experience-container .image-holder #pokeInfo {
   position: absolute;
+  border: 2px solid #111;
+  border-radius: 50%;
   top: 0;
+  right: 0;
+  left: 1;
+  bottom: 0;
   background-color: #efefef;
-  width: 350px;
-  height: 350px;
+  width: 100%;
+  height: 326px;
   opacity: 0;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -2161,7 +2167,7 @@ footer h6 {
   position: relative;
   font-size: 1.1rem;
   text-transform: capitalize;
-  margin: 0 0 .2em;
+  margin: 0 0 0.2em;
   -webkit-transform: translate3d(-50px, 0, 0);
           transform: translate3d(-50px, 0, 0);
   -webkit-transition: -webkit-transform 0.3s ease-in;
@@ -2240,7 +2246,7 @@ footer h6 {
   position: relative;
   font-size: 1.1rem;
   text-transform: capitalize;
-  margin: 0 0 .2em;
+  margin: 0 0 0.2em;
   -webkit-transform: translate3d(-50px, 0, 0);
           transform: translate3d(-50px, 0, 0);
   -webkit-transition: -webkit-transform 0.3s ease-in;
@@ -2319,7 +2325,7 @@ footer h6 {
   position: relative;
   font-size: 1.1rem;
   text-transform: capitalize;
-  margin: 0 0 .2em;
+  margin: 0 0 0.2em;
   -webkit-transform: translate3d(-50px, 0, 0);
           transform: translate3d(-50px, 0, 0);
   -webkit-transition: -webkit-transform 0.3s ease-in;
@@ -2398,7 +2404,7 @@ footer h6 {
   position: relative;
   font-size: 1.1rem;
   text-transform: capitalize;
-  margin: 0 0 .2em;
+  margin: 0 0 0.2em;
   -webkit-transform: translate3d(-50px, 0, 0);
           transform: translate3d(-50px, 0, 0);
   -webkit-transition: -webkit-transform 0.3s ease-in;
@@ -2477,7 +2483,7 @@ footer h6 {
   position: relative;
   font-size: 1.1rem;
   text-transform: capitalize;
-  margin: 0 0 .2em;
+  margin: 0 0 0.2em;
   -webkit-transform: translate3d(-50px, 0, 0);
           transform: translate3d(-50px, 0, 0);
   -webkit-transition: -webkit-transform 0.3s ease-in;
@@ -2556,7 +2562,7 @@ footer h6 {
   position: relative;
   font-size: 1.1rem;
   text-transform: capitalize;
-  margin: 0 0 .2em;
+  margin: 0 0 0.2em;
   -webkit-transform: translate3d(-50px, 0, 0);
           transform: translate3d(-50px, 0, 0);
   -webkit-transition: -webkit-transform 0.3s ease-in;
@@ -2635,7 +2641,7 @@ footer h6 {
   position: relative;
   font-size: 1.1rem;
   text-transform: capitalize;
-  margin: 0 0 .2em;
+  margin: 0 0 0.2em;
   -webkit-transform: translate3d(-50px, 0, 0);
           transform: translate3d(-50px, 0, 0);
   -webkit-transition: -webkit-transform 0.3s ease-in;

@@ -1,121 +1,121 @@
 /* styles for the skills section */
 @mixin letterSize {
-  font-size: 16px;
-  font-weight: 600;
-  padding-right: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    padding-right: 6px;
 }
 // Delay each nav item slide by 0.1
 @mixin delayLoop {
-  @for $x from 1 through 4 {
-    .nav-item:nth-child(#{$x}) {
-      transition-delay: $x * 0.1s;
+    @for $x from 1 through 4 {
+        .nav-item:nth-child(#{$x}) {
+            transition-delay: $x * 0.1s;
+        }
     }
-  }
 }
 
 /* Delay loop ends */
 @mixin elMargin {
-  margin: 0 auto;
-  padding-bottom: 25px;
+    margin: 0 auto;
+    padding-bottom: 25px;
 }
 /* styles for the skills section ends */
 /* Transitions starts */
 @mixin easeOut {
-  transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
 }
 /* Transitions ends */
 /* Transforms */
 @mixin trans3D-0 {
-  transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 /* Transforms ends */
 // background function starts
 @mixin background {
-  @if $show-home-image {
-    &#bg-img {
-      background: $home-image;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      }
+    @if $show-home-image {
+        &#bg-img {
+            background: $home-image;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
     }
-  }
+}
 // background function ends
 // footer styles starts
 @mixin footerNamestyle {
-  color: $logoBlack;
-  text-align: center;
+    color: $logoBlack;
+    text-align: center;
 }
 // footer styles ends
 /* Media Queries */
 @mixin mediaSm {
-  @media screen and (max-width: 500px) {
-    @content;
-  }
+    @media screen and (max-width: 500px) {
+        @content;
+    }
 }
 @mixin mediaMd {
-  @media screen and (max-width: 768px) {
-    @content;
-  }
+    @media screen and (max-width: 768px) {
+        @content;
+    }
 }
 @mixin mediaLg {
-  @media screen and (min-width: 769px) and (max-width: 1170px) {
-    @content;
-  }
+    @media screen and (min-width: 769px) and (max-width: 1170px) {
+        @content;
+    }
 }
 @mixin mediaXl {
-  @media screen and (min-width: 1171px) {
-    @content;
-  }
+    @media screen and (min-width: 1171px) {
+        @content;
+    }
 }
 
 // Projects starts
 @mixin projectHover {
-  .grey-bg {
-    background: #efefef;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
-    overflow: hidden;
-    &:hover {
-      opacity: 0.9;
-      .project-info {
-        .project-details {
-          transform: translate3d(0, 0, 0);
+    .grey-bg {
+        background: #efefef;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+        overflow: hidden;
+        &:hover {
+            opacity: 0.9;
+            .project-info {
+                .project-details {
+                    transform: translate3d(0, 0, 0);
+                }
+                .project-title {
+                    transform: translate3d(0, 0, 0);
+                }
+            }
         }
-        .project-title {
-          transform: translate3d(0, 0, 0);
+        .project-info {
+            padding: 20px 30px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            .tech {
+                padding-bottom: 5px;
+                font-weight: bold;
+            }
+            .project-details {
+                position: relative;
+                font-size: 1.1rem;
+                text-transform: capitalize;
+                margin: 0 0 0.2em;
+                transform: translate3d(-50px, 0, 0);
+                transition: transform 0.3s ease-in;
+            }
+            .project-title {
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                font-weight: 700;
+                transform: translate3d(-50px, 0, 0);
+                transition: transform 0.3s ease-in 0.1s;
+            }
         }
-      }
     }
-    .project-info {
-      padding: 20px 30px;
-      position: absolute;
-      width: 100%;
-      bottom: 0;
-      .tech {
-        padding-bottom: 5px;
-        font-weight: bold;
-      }
-      .project-details {
-        position: relative;
-        font-size: 1.1rem;
-        text-transform: capitalize;
-        margin: 0 0 .2em;
-        transform: translate3d(-50px, 0, 0);
-        transition: transform 0.3s ease-in;
-      }
-      .project-title {
-        font-size: 1.5rem;
-        text-transform: uppercase;
-        font-weight: 700;
-        transform: translate3d(-50px, 0, 0);
-        transition: transform 0.3s ease-in 0.1s;
-      }
-    }
-  }
 }
 // Projects ends
