@@ -13,13 +13,8 @@
             </div>
             <div class="experience-container">
                 <div class="image-holder">
-                    <div class="image">
-
-                    </div>
                     <div id="pokeInfo">
-                        <div class="infoBox">
-
-                        </div>
+                      <p class="color">Hello</p>
                     </div>
                 </div>
 

@@ -1749,6 +1749,7 @@ footer h6 {
 }
 
 #bio .experience-container .image-holder {
+  position: relative;
   width: 350px;
   height: 350px;
   margin: 55px 0 0 30px;
@@ -1756,15 +1757,35 @@ footer h6 {
 }
 
 #bio .experience-container .image-holder #pokeInfo {
+  position: absolute;
+  top: 0;
+  background-color: #efefef;
   width: 350px;
   height: 350px;
-  -webkit-transform: translate3d(0, -100%, 0);
-          transform: translate3d(0, -100%, 0);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
 }
 
 #bio .experience-container .image-holder #pokeInfo:hover {
+  opacity: 0.9;
+}
+
+#bio .experience-container .image-holder #pokeInfo:hover .color {
+  color: green;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
+}
+
+#bio .experience-container .image-holder #pokeInfo .color {
+  position: relative;
+  -webkit-transform: translate3d(-50px, 0, 0);
+          transform: translate3d(-50px, 0, 0);
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
 }
 
 #bio .experience-container .image-holder {
