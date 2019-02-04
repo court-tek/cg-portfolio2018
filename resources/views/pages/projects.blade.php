@@ -63,28 +63,6 @@
             <!-- color background ends -->
          </div>
         </a>
-        <a href="https://dashboardp.herokuapp.com/" class="box image3">
-          <div class="image">
-            <!-- color background starts -->
-              <div class="grey-bg">
-                <!-- Project details start -->
-                <div class="project-info">
-                  <div class="tech" style=""><br>
-                    Powered by:<br>
-                    <p>HTML5, Sass, jQuery</p>
-                  </div>
-                  <div class="project-details">
-                      Type: Responsive Web Page
-                  </div>
-                  <div class="project-title">
-                    GoJobs Dashboard
-                  </div>
-                </div>
-                <!-- Project details ends -->
-              </div>
-            <!-- color background ends -->
-         </div>
-        </a>
         <a href="https://shopbeast.herokuapp.com/index.html" class="box image4">
           <div class="image">
             <!-- color background starts -->
@@ -122,50 +100,6 @@
                   </div>
                   <div class="project-title">
                     Tekashi 69 Music Site
-                  </div>
-                </div>
-                <!-- Project details ends -->
-              </div>
-            <!-- color background ends -->
-         </div>
-        </a>
-        <a href="https://abodeapp.herokuapp.com/" class="box image6">
-          <div class="image">
-            <!-- color background starts -->
-              <div class="grey-bg">
-                <!-- Project details start -->
-                <div class="project-info">
-                  <div class="tech" style=""><br>
-                    Powered by:<br>
-                    <p>React, Sass, JSX</p>
-                  </div>
-                  <div class="project-details">
-                    Responsive Web Page
-                  </div>
-                  <div class="project-title">
-                    Real Estate Web App
-                  </div>
-                </div>
-                <!-- Project details ends -->
-              </div>
-            <!-- color background ends -->
-         </div>
-        </a>
-        <a href="#" class="box image7">
-          <div class="image">
-            <!-- color background starts -->
-              <div class="grey-bg">
-                <!-- Project details start -->
-                <div class="project-info">
-                  <div class="tech" style=""><br>
-                    Powered by:<br>
-                    <p>React, Sass</p>
-                  </div>
-                  <div class="project-details">
-                      Type: Responsive Web Page
-                  </div>
-                  <div class="project-title">
-                    Courtslist Classifieds
                   </div>
                 </div>
                 <!-- Project details ends -->
