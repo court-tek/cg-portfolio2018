@@ -9,14 +9,11 @@
     <div class="flex-center position-ref full-height">
         <div class="content">
             <div class="title m-b-md">
-              <span class="fname name" style="color: red;">Courtney</span><span class="lname name">Girley</span>
+              <span class="fname name">Courtney</span><span class="lname name">Girley</span>
             </div>
             <div id="test"></div>
-            <ul class="links">
-              <li>hello</li>
-              <li>Nurse</li>
-              <li>I like you girl</li>
-            </ul>
+            <div class="links">
+            </div>
         </div>
     </div>
   </section>
