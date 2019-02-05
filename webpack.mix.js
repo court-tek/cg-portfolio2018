@@ -13,4 +13,4 @@ const mix = require('laravel-mix');
 
  mix.js([
     'resources/js/admin.js'
- ], 'public/js/gloaming.js').sass('resources/sass/app.scss', 'public/css');
+ ], 'public/js/admin.js').sass('resources/sass/app.scss', 'public/css');

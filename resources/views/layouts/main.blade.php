@@ -23,6 +23,6 @@
         <div class="myContainer">
           @yield('content')
         </div>
-        <script src="{{mix('js/gloaming.js')}}" ></script>
+        <script src="{{mix('js/admin.js')}}" ></script>
     </body>
 </html>
