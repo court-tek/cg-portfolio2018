@@ -7,7 +7,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:100,200,600" rel="stylesheet" type="text/css">
         <!-- Styles -->
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        <link rel="stylesheet" href="{{ mix('css/app.css') }}">
         <style>
             html, body {
                 background-color: #fff;
@@ -23,6 +23,6 @@
         <div class="myContainer">
           @yield('content')
         </div>
-        <script src="{{asset('js/gloaming.js')}}" ></script>
+        <script src="{{ mix('js/gloaming.js') }}" ></script>
     </body>
 </html>
