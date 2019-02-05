@@ -20,6 +20,8 @@
         </style>
     </head>
     <body>
+        @include('includes.nav')
+        @include('includes.header')
         <div class="myContainer">
           @yield('content')
         </div>
