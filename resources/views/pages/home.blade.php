@@ -12,8 +12,11 @@
               <span class="fname name">Courtney</span><span class="lname name">Girley</span>
             </div>
             <div id="test"></div>
-            <div class="links">
-            </div>
+            <ul class="links">
+              <li>hello</li>
+              <li>Nurse</li>
+              <li>I like you girl</li>
+            </ul>
         </div>
     </div>
   </section>
