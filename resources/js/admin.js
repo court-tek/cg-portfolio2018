@@ -33,7 +33,7 @@ window.onload=function(){
   // }
 
   // hamburger menu
-  if (window.location.href === "http://localhost:8000/" || window.location.href === "www.courtneygirley.com") {
+  if (window.location.href === "http://localhost:8000/" || window.location.href === "www.courtneygirley.com/") {
       console.log("no event listener");
   } else {
       let showMenu = false;
