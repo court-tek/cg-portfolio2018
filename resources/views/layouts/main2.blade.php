@@ -22,6 +22,6 @@
         </div>
         @include('includes.footer')
         @include('includes.awesomeSauce')
-        <script src="{{ asset('js/admin.js') }}" ></script>
+        <script src="{{mix('js/admin.js')}}" ></script>
     </body>
 </html>
