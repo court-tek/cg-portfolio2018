@@ -32,7 +32,7 @@ const menuList = [
 // }
 
 // hamburger menu
-if (window.location.href === "http://localhost:8000/" || window.location.href === "http://www.courtneygirley.com/") {
+if (window.location.href === "http://localhost:8000/" || window.location.href === "www.courtneygirley.com") {
     console.log("no event listener");
 } else {
     let showMenu = false;
@@ -57,7 +57,7 @@ if (window.location.href === "http://localhost:8000/" || window.location.href ==
 // hamburger menu ends
 
 // Header
-if (window.location.href === "http://localhost:8000/" || window.location.href === "https://www.courtneygirley.com/") {
+if (window.location.href === "http://localhost:8000/" || window.location.href === "www.courtneygirley.com") {
     let text1 = "";
     for (var i = 0; i < menuList.length; i++) {
         text1 += `<a key="${menuList[i].id}" href="${menuList[i].linkTags}">${
