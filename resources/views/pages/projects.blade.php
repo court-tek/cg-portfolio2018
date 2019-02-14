@@ -19,7 +19,7 @@
       <!-- title container ends -->
       <!-- portfolio container starts -->
       <div class="portfolio-container">
-        <a href="https://islandricegrill.herokuapp.com/" class="box image1">
+        <a href="https://ancient-bayou-25827.herokuapp.com/" class="box image1">
           <div class="image">
             <!-- color background starts -->
               <div class="grey-bg">
@@ -41,7 +41,7 @@
             <!-- color background ends -->
          </div>
         </a>
-        <a href="https://smart-watch-email.herokuapp.com/index.html" class="box image2">
+        <a href="https://murmuring-springs-41240.herokuapp.com/index.html" class="box image2">
           <div class="image">
             <!-- color background starts -->
               <div class="grey-bg">
@@ -56,6 +56,29 @@
                   </div>
                   <div class="project-title">
                     Smart Watch Email
+                  </div>
+                </div>
+                <!-- Project details ends -->
+              </div>
+            <!-- color background ends -->
+         </div>
+        </a>
+        <a href="https://my-outbook-email.herokuapp.com/index.html" class="box image3">
+          <div class="image">
+            <!-- color background starts -->
+              <div class="grey-bg">
+                <!-- Project details start -->
+                <div class="project-info">
+                  <div class="tech" style=""><br>
+                    Powered by:<br>
+                    <p>HTML5, CSS3</p>
+                  </div>
+                  <div class="project-details">
+                      Type: Responsive HTML Email <br>
+                      Test: Litmus
+                  </div>
+                  <div class="project-title">
+                    Outback Gift Card
                   </div>
                 </div>
                 <!-- Project details ends -->
@@ -100,6 +123,29 @@
                   </div>
                   <div class="project-title">
                     Tekashi 69 Music Site
+                  </div>
+                </div>
+                <!-- Project details ends -->
+              </div>
+            <!-- color background ends -->
+         </div>
+        </a>
+        <a href="https://young-island-12647.herokuapp.com/index.html" class="box image6">
+          <div class="image">
+            <!-- color background starts -->
+              <div class="grey-bg">
+                <!-- Project details start -->
+                <div class="project-info">
+                  <div class="tech" style=""><br>
+                    Powered by:<br>
+                    <p>HTML5, CSS3</p>
+                  </div>
+                  <div class="project-details">
+                      Type: Responsive HTML Email <br>
+                      Test: Litmus
+                  </div>
+                  <div class="project-title">
+                    Outback Gift Card
                   </div>
                 </div>
                 <!-- Project details ends -->

@@ -19,12 +19,8 @@
             }
         </style>
     </head>
-    <body>
-        @include('includes.nav')
-        @include('includes.header')
-        <div class="myContainer">
+    <body class="home">
           @yield('content')
-        </div>
         <script src="{{mix('js/admin.js')}}" ></script>
     </body>
 </html>

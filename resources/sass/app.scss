@@ -13,6 +13,10 @@
 @import "mediaQueries";
 @import "menu";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   @include background;
   background: #fff;
@@ -24,6 +28,8 @@ body {
   }
 }
 
+
+
 .myContainer {
   padding-top: 80px;
   max-width: 1150px;
@@ -33,4 +39,39 @@ body {
 a {
   text-decoration: none;
   color: $logoBlack;
+}
+
+.primary-btn {
+  background: blue;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  text-align: center;
+  color: #fff;
+  display: inline-block;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-right: 15px;
+  padding: 15px 30px;
+
+  .project-anchor {
+    color: #fff;
+  }
+}
+
+.ghost-btn {
+  border: 3px solid #202020;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  text-align: center;
+  color: #202020;
+  display: inline-block;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  padding: 12px 27px;
 }

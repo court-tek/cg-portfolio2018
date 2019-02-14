@@ -1,52 +1,77 @@
-#home {
-  .full-height {
-      height: 100vh;
-  }
-
-  .flex-center {
-      align-items: center;
-      display: flex;
-      justify-content: center;
-  }
-
-  .position-ref {
+.home {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 30% 70%;
+  .info-section {
+    background: blue;
+    padding: 54px;
+    .logo {
       position: relative;
-  }
-
-  .top-right {
+      border: 2px #fff solid;
+      font-size: 18px;
+      background: #202020;
+      color: #fff;
+      height: 66px;
+      width: 66px;
+      h3 {
+        position: absolute;
+        font-family: "Times New Roman", Times, serif;
+        font-weight: 800;
+        font-size: 34px;
+        left: 6px;
+        top: 16px;
+      }
+    }
+    .info-box {
+      // padding: 54px;
       position: absolute;
-      right: 10px;
-      top: 18px;
-  }
-
-  .content {
-      text-align: center;
-  }
-
-  .title {
-      font-size: 84px;
-      .name {
-        padding: 5px;
+      bottom: 60px;
+      h4 {
+        font-size: 1.2rem;
+        color: #fff;
+        margin: 0.7rem 0;
       }
-      .fname {
-        font-weight: 700;
+
+      p {
+        font-size: 0.9rem;
+        font-weight: 300;
+        color: #fff;
+        margin: 0.2rem 0 1.6rem;
       }
-      .lname {
-        color: yellow;
-      }
+    }
   }
 
-  .links > a {
-      color: #636b6f;
-      padding: 0 25px;
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: .1rem;
-      text-decoration: none;
-      text-transform: uppercase;
-  }
+  .content-area {
+    background: white;
+    // margin-left: 35%;
+    // width: 65%;
+    // height: 100%;
+    padding: 0 25%;
 
-  .m-b-md {
-      margin-bottom: 30px;
+    .profile-section {
+      // vertical-align: top;
+      display: inline-block;
+      padding: 40% 0 0;
+      width: 500px;
+      max-width: 500px;
+      .profile {
+        h1 {
+          font-size: 2.3rem;
+          font-weight: 500;
+          line-height: 1.2;
+          margin: 0 0 1.7rem;
+
+          span {
+            color: blue;
+          }
+        }
+        h5 {
+          font-size: 1.1rem;
+          margin: 0 0 2rem;
+          color: #202020;
+          font-weight: 700;
+        }
+      }
+    }
   }
 }

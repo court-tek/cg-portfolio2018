@@ -1,20 +1,33 @@
 @extends('layouts.main')
 
 @section('title')
-  Courtney Girley - Web Developer / Frontend Developer / PHP
+  Courtney Girley - Web Developer / PHP
 @endsection
 
 @section('content')
-  <section id="home" class="row">
-    <div class="flex-center position-ref full-height">
-        <div class="content">
-            <div class="title m-b-md">
-              <span class="fname name">Courtney</span><span class="lname name">Girley</span>
-            </div>
-            <div id="test"></div>
-            <div class="links">
-            </div>
-        </div>
+  <section class="info-section">
+    <div class="logo"><h3>CG</h3></div>
+    <div class="info-box">
+      <h4>Email</h4>
+      <p>cdgirley@gmail.com</p>
+      <h4>Phone:</h4>
+      <p>(757) 718-2193</p>
     </div>
+  </section>
+  <section class="content-area">
+    <div class="profile-section">
+      <div class="profile">
+        <h1>
+          Courtney <br>
+          <span>Girley</span></h1>
+          <h5>Web Developer</h5>
+          <div class="primary-btn">
+            <a href="{{ route('projects') }}" class="project-anchor">Projects</a>
+          </div>
+          <div class="ghost-btn">
+            <a href="{{ route('bio') }}">Short Bio</a>
+          </div>
+      </div>
+  </div>
   </section>
 @endsection

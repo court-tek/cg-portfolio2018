@@ -1427,64 +1427,82 @@ table {
   box-sizing: border-box;
 }
 
-#home .full-height {
+.home {
+  display: grid;
   height: 100vh;
+  grid-template-columns: 30% 70%;
 }
 
-#home .flex-center {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.home .info-section {
+  background: blue;
+  padding: 54px;
 }
 
-#home .position-ref {
+.home .info-section .logo {
   position: relative;
+  border: 2px #fff solid;
+  font-size: 18px;
+  background: #202020;
+  color: #fff;
+  height: 66px;
+  width: 66px;
 }
 
-#home .top-right {
+.home .info-section .logo h3 {
   position: absolute;
-  right: 10px;
-  top: 18px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 800;
+  font-size: 34px;
+  left: 6px;
+  top: 16px;
 }
 
-#home .content {
-  text-align: center;
+.home .info-section .info-box {
+  position: absolute;
+  bottom: 60px;
 }
 
-#home .title {
-  font-size: 84px;
+.home .info-section .info-box h4 {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0.7rem 0;
 }
 
-#home .title .name {
-  padding: 5px;
+.home .info-section .info-box p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #fff;
+  margin: 0.2rem 0 1.6rem;
 }
 
-#home .title .fname {
+.home .content-area {
+  background: white;
+  padding: 0 25%;
+}
+
+.home .content-area .profile-section {
+  display: inline-block;
+  padding: 40% 0 0;
+  width: 500px;
+  max-width: 500px;
+}
+
+.home .content-area .profile-section .profile h1 {
+  font-size: 2.3rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0 0 1.7rem;
+}
+
+.home .content-area .profile-section .profile h1 span {
+  color: blue;
+}
+
+.home .content-area .profile-section .profile h5 {
+  font-size: 1.1rem;
+  margin: 0 0 2rem;
+  color: #202020;
   font-weight: 700;
-}
-
-#home .title .lname {
-  color: yellow;
-}
-
-#home .links > a {
-  color: #636b6f;
-  padding: 0 25px;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: .1rem;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-#home .m-b-md {
-  margin-bottom: 30px;
 }
 
 nav .menu-nav {
@@ -2273,9 +2291,9 @@ footer h6 {
 
 #portfolio-section .portfolio-container .image3 .image {
   position: relative;
-  background: url("https://raw.githubusercontent.com/court-tek/myWebFiles/master/goJobsDash.png");
+  background: url("https://raw.githubusercontent.com/court-tek/myWebFiles/master/steakOutback.png");
   background-size: cover;
-  background-position: top left center;
+  background-position: center;
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
@@ -2510,9 +2528,9 @@ footer h6 {
 
 #portfolio-section .portfolio-container .image6 .image {
   position: relative;
-  background: url("https://raw.githubusercontent.com/court-tek/myWebFiles/master/projectImage.png");
+  background: url("https://raw.githubusercontent.com/court-tek/myWebFiles/master/abodes.png");
   background-size: cover;
-  background-position: top left;
+  background-position: center;
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
@@ -2682,40 +2700,8 @@ footer h6 {
     height: 25vh;
   }
 
-  #home {
-    background: red;
-  }
-
-  #home .content .title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    margin: 20px 0 0 -40px;
-  }
-
-  #home .content .links {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    margin: 20px 0 0 -40px;
-  }
-
-  #home .content .links a {
-    padding: 15px;
+  .home {
+    height: 130vh;
   }
 
   .skill-container .lmnop {
@@ -3111,6 +3097,11 @@ header .nav-item:nth-child(6) {
           transition-delay: 1.2s;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   background: #fff;
   font-family: "Montserrat", sans-serif;
@@ -3137,5 +3128,36 @@ body .wrapper1 {
 a {
   text-decoration: none;
   color: #1b1d24;
+}
+
+.primary-btn {
+  background: blue;
+  border-radius: 30px;
+  text-align: center;
+  color: #fff;
+  display: inline-block;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-right: 15px;
+  padding: 15px 30px;
+}
+
+.primary-btn .project-anchor {
+  color: #fff;
+}
+
+.ghost-btn {
+  border: 3px solid #202020;
+  border-radius: 30px;
+  text-align: center;
+  color: #202020;
+  display: inline-block;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  padding: 12px 27px;
 }
 

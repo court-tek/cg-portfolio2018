@@ -7,35 +7,7 @@ window.onload=function(){
   const navItems = document.querySelectorAll(".nav-item");
   const frontLinks = document.querySelector(".links");
   const stripper = document.querySelector("#stripper");
-  const menuList = [
-      { id: 2, link: "Skills", linkTags: "skills" },
-      { id: 3, link: "Projects", linkTags: "projects" },
-      { id: 4, link: "Short Bio", linkTags: "short-bio" }
-  ];
 
-  // CSS Spinner
-  // if (window.location.href === "http://localhost:8000/short-bio") {
-  //     promise = new Promise(resovle => {
-  //         setTimeout(() => {
-  //             resovle();
-  //         }, 3000);
-  //     });
-  //
-  //     promise
-  //         .then(() => stripper.classList.remove("spinner"))
-  //         .then(() =>(stripper.innerHTML =
-  //           `  `
-  //           )
-  //         );
-  //     // Spinner Ends
-  // } else {
-  //     console.log("Don't promise anything!");
-  // }
-
-  // hamburger menu
-  if (window.location.href === "http://localhost:8000/" || window.location.href === "www.courtneygirley.com/") {
-      console.log("no event listener");
-  } else {
       let showMenu = false;
       menuBtn.addEventListener("click", () => {
           if (!showMenu) {
@@ -54,26 +26,4 @@ window.onload=function(){
               console.log(showMenu);
           }
       });
-  }
-  // hamburger menu ends
-
-  // Header
-  if (window.location.href === "http://localhost:8000/" || window.location.href === "www.courtneygirley.com") {
-      let text1 = "";
-      for (var i = 0; i < menuList.length; i++) {
-          text1 += `<a key="${menuList[i].id}" href="${menuList[i].linkTags}">${
-              menuList[i].link
-          }</a>`;
-      }
-      frontLinks.innerHTML = text1;
-  } else {
-      console.log("hello");
-      // let text2 = ''
-      // for (var i = 0; i < menuList.length; i++) {
-      //   text2 += `<li class="nav-item"><a class="nav-link" key="${menuList[i].id}" href="${menuList[i].linkTags}">${menuList[i].link}</a></li>`
-      // }
-      // menuBranding.innerHTML = text2;
-  }
-  // Header Ends
-
 }

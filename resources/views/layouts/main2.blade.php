@@ -15,7 +15,6 @@
         @yield('styles')
     </head>
     <body>
-      @include('includes.nav')
       @include('includes.header')
         <div class="wrapper1">
               @yield('content')
