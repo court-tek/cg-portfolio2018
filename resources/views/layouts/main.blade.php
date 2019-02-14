@@ -20,6 +20,7 @@
         </style>
     </head>
     <body class="home">
+          @include('includes.header')
           @yield('content')
         <script src="{{mix('js/admin.js')}}" ></script>
     </body>
