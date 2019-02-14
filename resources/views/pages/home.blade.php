@@ -6,12 +6,12 @@
 
 @section('content')
   <section class="info-section">
-    <div class="logo"><h3>CG</h3></div>
+    <div class="logo"><h3>{CG}</h3></div>
     <div class="info-box">
       <h4>Email</h4>
       <p>cdgirley@gmail.com</p>
       <h4>Phone:</h4>
-      <p>(757) 524-1468</p>
+      <p>(757) 524-1468k</p>
     </div>
   </section>
   <section class="content-area">
