@@ -11,7 +11,7 @@
       <h4>Email</h4>
       <p>cdgirley@gmail.com</p>
       <h4>Phone:</h4>
-      <p>(757) 718-2193</p>
+      <p>(757) 524-1468</p>
     </div>
   </section>
   <section class="content-area">
