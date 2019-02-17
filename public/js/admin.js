@@ -143,8 +143,8 @@ switch (pathArray[3]) {
   case '3':
     htmlEmail = {
       gif: 'https://raw.githubusercontent.com/court-tek/myWebFiles/master/testImage6.0.gif',
-      projectName: 'Outback Ad Project',
-      github: "https://github.com/court-tek/outbackAd",
+      projectName: 'Shopbeast Project',
+      github: "https://github.com/court-tek/shopbeastEmail",
       test: 'this is email 3'
     };
     console.log("" + htmlEmail.test);
@@ -152,8 +152,8 @@ switch (pathArray[3]) {
   case '4':
     htmlEmail = {
       gif: 'https://raw.githubusercontent.com/court-tek/myWebFiles/master/testImage6.0.gif',
-      projectName: 'Outback Ad Project',
-      github: "https://github.com/court-tek/outbackAd",
+      projectName: 'London Land Project',
+      github: "https://github.com/court-tek/londonLand-Email",
       test: 'this is email 4'
     };
     console.log("" + htmlEmail.test);
