@@ -124,9 +124,9 @@ var pathArray = window.location.pathname.split('/');
 switch (pathArray[3]) {
   case '1':
     htmlEmail = {
-      gif: 'https://raw.githubusercontent.com/court-tek/myWebFiles/master/testImage6.0.gif',
+      gif: 'https://raw.githubusercontent.com/court-tek/myWebFiles/master/smartWatchgif.gif',
       projectName: 'Smart Watch Project',
-      github: 'https://github.com/court-tek/outbackAd',
+      github: 'https://github.com/court-tek/SmartWatchEmail',
       test: 'this is email 1'
     };
     console.log("" + htmlEmail.test);
@@ -152,7 +152,7 @@ switch (pathArray[3]) {
   case '4':
     htmlEmail = {
       gif: 'https://raw.githubusercontent.com/court-tek/myWebFiles/master/testImage6.0.gif',
-      projectName: 'London Land Project',
+      projectName: 'LondonLand Project',
       github: "https://github.com/court-tek/londonLand-Email",
       test: 'this is email 4'
     };

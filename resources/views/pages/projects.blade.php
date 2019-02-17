@@ -145,7 +145,7 @@
                       Test: Litmus
                   </div>
                   <div class="project-title">
-                    Outback Gift Card
+                    LondonLand & NewHomes
                   </div>
                 </div>
                 <!-- Project details ends -->
