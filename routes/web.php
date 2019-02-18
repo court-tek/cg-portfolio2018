@@ -23,6 +23,10 @@ Route::get('/projects', function () {
     return view('pages.projects');
 })->name('projects');
 
+Route::get('/projects/project/{id}', function () {
+    return view('pages.subPages.project');
+})->name('info');
+
 Route::get('/short-bio', function () {
     return view('pages.bio');
 })->name('bio');

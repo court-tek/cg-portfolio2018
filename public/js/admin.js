@@ -76,37 +76,56 @@ module.exports = __webpack_require__(2);
 /***/ (function(module, exports) {
 
 window.onload = function () {
-    var header = document.querySelector("#head");
-    var menuBtn = document.querySelector(".menu-btn");
-    var menu = document.querySelector("#menu2");
-    var menuBranding = document.querySelector(".menu-branding");
-    var navLink = document.querySelectorAll(".nav-link");
-    var navItems = document.querySelectorAll(".nav-item");
-    var frontLinks = document.querySelector(".links");
-    var stripper = document.querySelector("#stripper");
-
-    var showMenu = false;
-    menuBtn.addEventListener("click", function () {
-        if (!showMenu) {
-            menuBtn.classList.add("openIt");
-            menu.classList.add("show");
-            menuBranding.classList.add("show");
-            navItems.forEach(function (item) {
-                return item.classList.add("show");
-            });
-            showMenu = true;
-            console.log(showMenu);
-        } else {
-            menuBtn.classList.remove("openIt");
-            menu.classList.remove("show");
-            menuBranding.classList.remove("show");
-            navItems.forEach(function (item) {
-                return item.classList.remove("show");
-            });
-            showMenu = false;
-            console.log(showMenu);
-        }
-    });
+  var header = document.querySelector("#head");
+  var menuBtn = document.querySelector(".menu-btn");
+  var menu = document.querySelector("#menu2");
+  var menuBranding = document.querySelector(".menu-branding");
+  var navLink = document.querySelectorAll(".nav-link");
+  var navItems = document.querySelectorAll(".nav-item");
+  var frontLinks = document.querySelector(".links");
+  var stripper = document.querySelector("#stripper");
+  var icon1 = document.querySelector(".icon1");
+  var icon2 = document.querySelector(".icon2");
+  var pageInfo = {};
+  // Menu toggle
+  var showMenu = false;
+  menuBtn.addEventListener("click", function () {
+    if (!showMenu) {
+      menuBtn.classList.add("openIt");
+      menu.classList.add("show");
+      menuBranding.classList.add("show");
+      navItems.forEach(function (item) {
+        return item.classList.add("show");
+      });
+      showMenu = true;
+      console.log(showMenu);
+    } else {
+      menuBtn.classList.remove("openIt");
+      menu.classList.remove("show");
+      menuBranding.classList.remove("show");
+      navItems.forEach(function (item) {
+        return item.classList.remove("show");
+      });
+      showMenu = false;
+      console.log(showMenu);
+    }
+  });
+  // Menu toggle ends
+  // project page display
+  var pathArray = window.location.pathname.split('/');
+  console.log(pathArray);
+  switch (pathArray[3]) {
+    case '1':
+      console.log('we did it');
+      icon1.innerHTML = '<img src="https://raw.githubusercontent.com/court-tek/myWebFiles/master/html5.png">';
+      icon2.innerHTML = '<img src="https://raw.githubusercontent.com/court-tek/myWebFiles/master/css3Logo.png">';
+      break;
+    case '2':
+      console.log('we did it');
+      icon1.innerHTML = '<img src="https://raw.githubusercontent.com/court-tek/myWebFiles/master/html5.png">';
+      break;
+    default:
+  }
 };
 
 /***/ }),

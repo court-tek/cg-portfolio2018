@@ -41,7 +41,7 @@
             <!-- color background ends -->
          </div>
         </a>
-        <a href="https://murmuring-springs-41240.herokuapp.com/index.html" class="box image2">
+        <a href="{{ route('info', ['id' => 1]) }}" class="box image2">
           <div class="image">
             <!-- color background starts -->
               <div class="grey-bg">
