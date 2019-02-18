@@ -65,7 +65,16 @@
             gif: 'https://raw.githubusercontent.com/court-tek/myWebFiles/master/testImage6.0.gif',
             projectName: 'Outback Ad Project',
             github: "https://github.com/court-tek/outbackAd",
-            test: 'this is email 2'
+            test: 'this is email 3'
+          }
+          console.log(`${htmlEmail.test}`);
+          break;
+        case '4':
+          htmlEmail = {
+            gif: 'https://raw.githubusercontent.com/court-tek/myWebFiles/master/testImage6.0.gif',
+            projectName: 'Outback Ad Project',
+            github: "https://github.com/court-tek/outbackAd",
+            test: 'this is email 4'
           }
           console.log(`${htmlEmail.test}`);
           break;

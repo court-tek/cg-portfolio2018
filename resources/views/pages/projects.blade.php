@@ -63,7 +63,7 @@
             <!-- color background ends -->
          </div>
         </a>
-        <a href="https://my-outbook-email.herokuapp.com/index.html" class="box image3">
+        <a href="{{ route('info', ['id' => 2]) }}" class="box image3">
           <div class="image">
             <!-- color background starts -->
               <div class="grey-bg">
@@ -86,7 +86,7 @@
             <!-- color background ends -->
          </div>
         </a>
-        <a href="https://shopbeast.herokuapp.com/index.html" class="box image4">
+        <a href="{{ route('info', ['id' => 3]) }}" class="box image4">
           <div class="image">
             <!-- color background starts -->
               <div class="grey-bg">
@@ -130,7 +130,7 @@
             <!-- color background ends -->
          </div>
         </a>
-        <a href="https://young-island-12647.herokuapp.com/index.html" class="box image6">
+        <a href="{{ route('info', ['id' => 4]) }}" class="box image6">
           <div class="image">
             <!-- color background starts -->
               <div class="grey-bg">
