@@ -12,32 +12,22 @@
     .myContainer {
         width: 100%;
     }
-    // Nav section
-    // #navi {
-    //     visibility: hidden;
-    // }
     // Menu section ########
     div.menu-branding,
     ul.other {
       float: none;
       width: 100%;
     }
-
     .menu-branding {
       height: 25vh;
     }
     // Menu section ends ########
-
     // Home section ########
     .home {
       height: 130vh;
-        // background: blue;
-        // .content-area {
-        //   height: 100%;
-        //   margin-left: 35%;
-        //   width: 55%;
-        //   padding: 0 25%;
-        // }
+        .info-box {
+          bottom: 150px;
+        }
     }
     // Home section ends ########
     // Skills section ########
@@ -140,6 +130,40 @@
 // Smartphones
 /* max-width: 500px */
 @include mediaSm {
+    // Home section ########
+    .home {
+      display: block;
+      overflow-x: hidden;
+      .info-section {
+        padding: 30px 15px;
+        .info-box {
+          display: none;
+        }
+      }
+      .wrap {
+        min-height: calc(100vh - 70px);
+        padding-bottom: 50px;
+      .content-area {
+        padding: 0 10%;
+        .profile-section {
+          text-align: center;
+          width: 300px;
+          .profile {
+            .primary-btn {
+              margin: 0 0 7px;
+            }
+            .ghost-btn {
+              margin: 7px 0 0;
+            }
+          }
+        }
+      }
+    }
+      .footer-block {
+        display: block;
+      }
+    }
+    // Home section ends ########
     // projects section ########
     #portfolio-section {
         .portfolio-container {
@@ -192,4 +216,16 @@
         }
     }
     // Experience section ends ########
+    // Bio section ########
+    #bio {
+        .bio-container {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-gap: 20px;
+            .image-holder {
+              margin: 55px 0 0 5px;
+            }
+        }
+    }
+    // Bio section ends ########
 }

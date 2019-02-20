@@ -1475,34 +1475,37 @@ table {
   margin: 0.2rem 0 1.6rem;
 }
 
-.home .content-area {
+.home .wrap .content-area {
   background: white;
   padding: 0 25%;
 }
 
-.home .content-area .profile-section {
+.home .wrap .content-area .profile-section {
   display: inline-block;
   padding: 40% 0 0;
   width: 500px;
-  max-width: 500px;
 }
 
-.home .content-area .profile-section .profile h1 {
+.home .wrap .content-area .profile-section .profile h1 {
   font-size: 2.3rem;
   font-weight: 500;
   line-height: 1.2;
   margin: 0 0 1.7rem;
 }
 
-.home .content-area .profile-section .profile h1 span {
+.home .wrap .content-area .profile-section .profile h1 span {
   color: blue;
 }
 
-.home .content-area .profile-section .profile h5 {
+.home .wrap .content-area .profile-section .profile h5 {
   font-size: 1.1rem;
   margin: 0 0 2rem;
   color: #202020;
   font-weight: 700;
+}
+
+.home .footer-block {
+  display: none;
 }
 
 nav .menu-nav {
@@ -1760,13 +1763,13 @@ footer h6 {
   text-transform: uppercase;
 }
 
-#bio .experience-container {
+#bio .bio-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
 }
 
-#bio .experience-container .image-holder {
+#bio .bio-container .image-holder {
   position: relative;
   width: 325px;
   height: 325px;
@@ -1778,7 +1781,7 @@ footer h6 {
   background-size: 350px;
 }
 
-#bio .experience-container .image-holder #pokeInfo {
+#bio .bio-container .image-holder #pokeInfo {
   position: absolute;
   border: 2px solid #111;
   border-radius: 50%;
@@ -1795,19 +1798,19 @@ footer h6 {
   overflow: hidden;
 }
 
-#bio .experience-container .image-holder #pokeInfo:hover {
+#bio .bio-container .image-holder #pokeInfo:hover {
   opacity: 0.9;
-  -webkit-transition-delay: 0.1S;
-          transition-delay: 0.1S;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
 }
 
-#bio .experience-container .image-holder #pokeInfo:hover .color {
+#bio .bio-container .image-holder #pokeInfo:hover .color {
   color: green;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
 
-#bio .experience-container .image-holder #pokeInfo .color {
+#bio .bio-container .image-holder #pokeInfo .color {
   position: relative;
   -webkit-transform: translate3d(-50px, 0, 0);
           transform: translate3d(-50px, 0, 0);
@@ -1817,23 +1820,23 @@ footer h6 {
   transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
 }
 
-#bio .experience-container .image-holder {
+#bio .bio-container .image-holder {
   padding: 40px 0 0;
 }
 
-#bio .experience-container .image-holder .image {
+#bio .bio-container .image-holder .image {
   padding: 15px;
 }
 
-#bio .experience-container .info {
+#bio .bio-container .info {
   padding: 40px 0 0;
 }
 
-#bio .experience-container .info .info-box {
+#bio .bio-container .info .info-box {
   padding: 15px;
 }
 
-#bio .experience-container .info .info-box h4 {
+#bio .bio-container .info .info-box h4 {
   color: #16171c;
   font-size: 1rem;
   font-weight: 700;
@@ -1841,7 +1844,7 @@ footer h6 {
   letter-spacing: 5px;
 }
 
-#bio .experience-container .info .info-box .date {
+#bio .bio-container .info .info-box .date {
   color: #52b7ff;
   font-size: 0.8rem;
   font-weight: 900;
@@ -1851,7 +1854,7 @@ footer h6 {
   display: block;
 }
 
-#bio .experience-container .info .info-box p {
+#bio .bio-container .info .info-box p {
   color: #b2b2b4;
   font-size: 0.9rem;
   font-weight: 400;
@@ -2849,6 +2852,10 @@ footer h6 {
     height: 130vh;
   }
 
+  .home .info-box {
+    bottom: 150px;
+  }
+
   .skill-container .lmnop {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -2993,6 +3000,45 @@ footer h6 {
 /* max-width: 500px */
 
 @media screen and (max-width: 500px) {
+  .home {
+    display: block;
+    overflow-x: hidden;
+  }
+
+  .home .info-section {
+    padding: 30px 15px;
+  }
+
+  .home .info-section .info-box {
+    display: none;
+  }
+
+  .home .wrap {
+    min-height: calc(100vh - 70px);
+    padding-bottom: 50px;
+  }
+
+  .home .wrap .content-area {
+    padding: 0 10%;
+  }
+
+  .home .wrap .content-area .profile-section {
+    text-align: center;
+    width: 300px;
+  }
+
+  .home .wrap .content-area .profile-section .profile .primary-btn {
+    margin: 0 0 7px;
+  }
+
+  .home .wrap .content-area .profile-section .profile .ghost-btn {
+    margin: 7px 0 0;
+  }
+
+  .home .footer-block {
+    display: block;
+  }
+
   #portfolio-section .portfolio-container .image1 {
     grid-column: 1 / 4;
     grid-row: 1 / 2;
@@ -3041,6 +3087,16 @@ footer h6 {
 
   #experience .experience-container .shapeIcons {
     display: none;
+  }
+
+  #bio .bio-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 20px;
+  }
+
+  #bio .bio-container .image-holder {
+    margin: 55px 0 0 5px;
   }
 }
 

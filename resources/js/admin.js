@@ -1,4 +1,4 @@
-// window.onload=function(){
+window.onload=function(){
   const header = document.querySelector("#head");
   const menuBtn = document.querySelector(".menu-btn");
   const menu = document.querySelector("#menu2");
@@ -8,8 +8,6 @@
   const frontLinks = document.querySelector(".links");
   const stripper = document.querySelector("#stripper");
   const container = document.querySelector(".container");
-  const icon1 = document.querySelector(".icon1");
-  const icon2 = document.querySelector(".icon2");
 
 
       // Menu toggle
@@ -36,10 +34,9 @@
 
       /// project page display starts ///
 
-      // variable for containing page info inside of an object
+      // variable for containing page info inside of an object(htmlEmail)
       let htmlEmail;
-
-      // pathArray retrieves window location id to match the objects in swithc statement
+      //
       let pathArray = window.location.pathname.split('/');
       switch (pathArray[3]) {
         case '1':
@@ -47,33 +44,49 @@
             gif: 'https://raw.githubusercontent.com/court-tek/myWebFiles/master/smartWatchgif.gif',
             projectName: 'Smart Watch Project',
             github: 'https://github.com/court-tek/SmartWatchEmail',
+            logo1: "https://raw.githubusercontent.com/court-tek/myWebFiles/master/html5.png",
+            logo2: "https://raw.githubusercontent.com/court-tek/myWebFiles/master/css3.png",
+            logo3: "",
+            logo4: "",
             test: 'this is email 1'
           }
           console.log(`${htmlEmail.test}`);
           break;
         case '2':
           htmlEmail = {
-            gif: 'https://raw.githubusercontent.com/court-tek/myWebFiles/master/testImage6.0.gif',
+            gif: 'https://raw.githubusercontent.com/court-tek/myWebFiles/master/outbackgif.gif',
             projectName: 'Outback Ad Project',
             github: "https://github.com/court-tek/outbackAd",
+            logo1: "https://raw.githubusercontent.com/court-tek/myWebFiles/master/html5.png",
+            logo2: "https://raw.githubusercontent.com/court-tek/myWebFiles/master/css3.png",
+            logo3: "",
+            logo4: "",
             test: 'this is email 2'
           }
           console.log(`${htmlEmail.test}`);
           break;
         case '3':
           htmlEmail = {
-            gif: 'https://raw.githubusercontent.com/court-tek/myWebFiles/master/testImage6.0.gif',
+            gif: 'https://raw.githubusercontent.com/court-tek/myWebFiles/master/shopbeastgif.gif',
             projectName: 'Shopbeast Project',
             github: "https://github.com/court-tek/shopbeastEmail",
+            logo1: "https://raw.githubusercontent.com/court-tek/myWebFiles/master/html5.png",
+            logo2: "https://raw.githubusercontent.com/court-tek/myWebFiles/master/css3.png",
+            logo3: "",
+            logo4: "",
             test: 'this is email 3'
           }
           console.log(`${htmlEmail.test}`);
           break;
         case '4':
           htmlEmail = {
-            gif: 'https://raw.githubusercontent.com/court-tek/myWebFiles/master/testImage6.0.gif',
+            gif: 'https://raw.githubusercontent.com/court-tek/myWebFiles/master/londonlandgif.gif',
             projectName: 'LondonLand Project',
             github: "https://github.com/court-tek/londonLand-Email",
+            logo1: "https://raw.githubusercontent.com/court-tek/myWebFiles/master/html5.png",
+            logo2: "https://raw.githubusercontent.com/court-tek/myWebFiles/master/css3.png",
+            logo3: "",
+            logo4: "",
             test: 'this is email 4'
           }
           console.log(`${htmlEmail.test}`);
@@ -96,20 +109,20 @@
             <h3>Technologies</h3>
             <div class="icons">
                 <div class="icon icon1">
-
+                  <img src="${htmlEmail.logo1}">
                 </div>
                 <div class="icon icon2">
-
+                  <img src="${htmlEmail.logo2}">
                 </div>
                 <div class="icon icon3">
-
+                  <img src="${htmlEmail.logo3}">
                 </div>
                 <div class="icon icon4">
-
+                  <img src="${htmlEmail.logo4}">
                 </div>
             </div>
           </div>
       `
       container.innerHTML = markup;
       // Project page display ends
-// }
+}

@@ -22,6 +22,9 @@
     <body class="home">
           @include('includes.header')
           @yield('content')
-        <script src="{{mix('js/admin.js')}}" ></script>
+          <div class="footer-block">
+            @include('includes.footer')
+          </div>
+          <script src="{{mix('js/admin.js')}}" ></script>
     </body>
 </html>

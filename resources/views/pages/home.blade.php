@@ -14,6 +14,7 @@
       <p>(757) 524-1468k</p>
     </div>
   </section>
+  <div class="wrap">
   <section class="content-area">
     <div class="profile-section">
       <div class="profile">
@@ -30,4 +31,5 @@
       </div>
   </div>
   </section>
+</div>
 @endsection

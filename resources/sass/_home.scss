@@ -23,7 +23,6 @@
       }
     }
     .info-box {
-      // padding: 54px;
       position: absolute;
       bottom: 60px;
       h4 {
@@ -40,7 +39,7 @@
       }
     }
   }
-
+  .wrap {
   .content-area {
     background: white;
     // margin-left: 35%;
@@ -53,14 +52,12 @@
       display: inline-block;
       padding: 40% 0 0;
       width: 500px;
-      max-width: 500px;
       .profile {
         h1 {
           font-size: 2.3rem;
           font-weight: 500;
           line-height: 1.2;
           margin: 0 0 1.7rem;
-
           span {
             color: blue;
           }
@@ -73,5 +70,9 @@
         }
       }
     }
+  }
+}
+  .footer-block {
+    display: none;
   }
 }
